@@ -5,7 +5,8 @@ const   gulp            = require('gulp'),
         rename          = require('gulp-rename'),
         imagemin        = require('gulp-imagemin'),
         pngquant        = require('imagemin-pngquant'),
-        autoprefixer    = require('gulp-autoprefixer');
+        autoprefixer    = require('gulp-autoprefixer'),
+        connect         = require('gulp-connect');
 
 gulp.task('less', function () {
     return gulp.src(['./less/*.less', '!./less/variables.less'])
@@ -14,13 +15,15 @@ gulp.task('less', function () {
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('../dist/css'))
+        .pipe(connect.reload())
 });
 
 gulp.task('js-minify', function () {
     return gulp.src('./js/*.js')
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('../dist/js'));
+        .pipe(gulp.dest('../dist/js'))
+        .pipe(connect.reload())
 });
 
 gulp.task('img', function () {
@@ -34,8 +37,19 @@ gulp.task('img', function () {
         .pipe(gulp.dest('../dist/img'));
 });
 
+gulp.task('webserver', function() {
+    connect.server({
+      livereload: true,
+      root: ['..', '.dist']
+    });
+  });
+
 gulp.task('build', gulp.series('less', 'js-minify', 'img'));
 
 gulp.task('watch', function () {
+    connect.server({
+        livereload: true,
+        root: '../dist'
+      });
     gulp.watch('.', gulp.series('less', 'js-minify', 'img'));
 });
