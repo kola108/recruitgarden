@@ -21,7 +21,7 @@
 
 ## Live server for Gulp
 
-- Every time when you are starting gulp watching service automatically you running a live server for Gulp, which allows you to observe the development process in runtime. For this after starting gulp watching service go to the browser and in address url input `http://localhost:8080/`
+Every time when you are starting gulp watching service automatically you running a live server for Gulp, which allows you to observe the development process in runtime. For this after starting gulp watching service go to the browser and in address url input `http://localhost:8080/`
 
 
 ## Less variables
