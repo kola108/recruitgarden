@@ -31,9 +31,5 @@ For general colors and paddings use `variables.less` in `Recruitgarden/dev/less/
 
 ## Fonts declarations
 
-Every font should have a declaration in `Recruitgarden/dev/less/fonts.less` file. Every less file (for example `home.less`) should include the file `fonts.min.css` (example: `@import url("fonts.min.css");`)
+Every font should have a declaration in `Recruitgarden/dev/less/variables.less` file.
 
-
-## Images 
-
-Every image should be in `Recruitgarden/dev/images` folder because gulp will compress them and put into `Recruitgarden/dixt/img`
