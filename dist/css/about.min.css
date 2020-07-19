@@ -1,1 +1,1 @@
-@import url("fonts.min.css");body{background-color:red}
+.d-flex{display:-ms-flexbox;display:flex}.justify-content-between{-ms-flex-pack:justify;justify-content:space-between}.align-items-center{-ms-flex-align:center;align-items:center}.container{max-width:1150px;margin:auto;padding:0 15px}.header-right__toggler .btn-toggle{background-color:transparent;border:none}button.btn-toggle{background-color:red;border:none}

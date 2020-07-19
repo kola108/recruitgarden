@@ -3,7 +3,6 @@ const   gulp            = require('gulp'),
         uglify          = require('gulp-uglify-es').default,
         cssnano         = require('gulp-cssnano'),
         rename          = require('gulp-rename'),
-        imagemin        = require('gulp-imagemin'),        
         autoprefixer    = require('gulp-autoprefixer'),
         connect         = require('gulp-connect');
 
@@ -25,17 +24,6 @@ gulp.task('js-minify', function () {
         .pipe(connect.reload())
 });
 
-gulp.task('img', function () {
-    return gulp.src('./images/**/*')
-        .pipe(imagemin({
-            interlaced: true,
-            progressive: true,
-            svgPlugins: [{removeViewBox: false}],
-            // use: [pngquant()]
-        }))
-        .pipe(gulp.dest('../dist/img'));
-});
-
 gulp.task('webserver', function() {
     connect.server({
       livereload: true,
@@ -43,12 +31,12 @@ gulp.task('webserver', function() {
     });
   });
 
-gulp.task('build', gulp.series('less', 'js-minify', 'img'));
+gulp.task('build', gulp.series('less', 'js-minify'));
 
 gulp.task('watch', function () {
     connect.server({
         livereload: true,
         root: '../dist'
       });
-    gulp.watch('.', gulp.series('less', 'js-minify', 'img'));
+    gulp.watch('.', gulp.series('less', 'js-minify'));
 });
