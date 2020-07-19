@@ -3,8 +3,7 @@ const   gulp            = require('gulp'),
         uglify          = require('gulp-uglify-es').default,
         cssnano         = require('gulp-cssnano'),
         rename          = require('gulp-rename'),
-        imagemin        = require('gulp-imagemin'),
-        pngquant        = require('imagemin-pngquant'),
+        imagemin        = require('gulp-imagemin'),        
         autoprefixer    = require('gulp-autoprefixer'),
         connect         = require('gulp-connect');
 
@@ -32,7 +31,7 @@ gulp.task('img', function () {
             interlaced: true,
             progressive: true,
             svgPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            // use: [pngquant()]
         }))
         .pipe(gulp.dest('../dist/img'));
 });
