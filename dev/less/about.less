@@ -14,6 +14,12 @@
     margin: auto;
     padding: 0 15px;
 }
+.header {
+    padding: 55px 0;
+}
+.header-right__span {
+    margin-right: 40px;
+}
 .header-right__toggler {
     .btn-toggle {
         background-color: transparent;
@@ -21,13 +27,40 @@
     }
 }
 
-button.btn-toggle {
-    
-        background-color: red;
-        border: none;
-}
 h2 {
     font-size: 56px;
     font-weight: bold;
     color: #000;
+}
+
+.section-about-alternative {
+    // background-color: #EFF6FF;
+
+}
+.container-fluid {
+    width: 100%;
+    max-width: 1440px;
+    background-color: #EFF6FF;
+    padding: 200px 0 195px 0;
+    clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
+    
+}
+.btn {
+    border-radius: 0;
+    border: 1px solid @primary-color;
+}
+.btn-primary {
+    background-color: @primary-color;
+    &:hover {
+        background-color: @secordary-color;
+        color: @primary-color;
+        border: 1px solid @primary-color;
+    }
+}
+
+.footer {
+    padding: 40px 0;
+}
+.footer-nav a {
+    margin-right: 30px;
 }
