@@ -1,10 +1,10 @@
 const   gulp            = require('gulp'),
-        less            = require('gulp-less'),
-        uglify          = require('gulp-uglify-es').default,
-        cssnano         = require('gulp-cssnano'),
-        rename          = require('gulp-rename'),
-        autoprefixer    = require('gulp-autoprefixer'),
-        connect         = require('gulp-connect');
+    less            = require('gulp-less'),
+    uglify          = require('gulp-uglify-es').default,
+    cssnano         = require('gulp-cssnano'),
+    rename          = require('gulp-rename'),
+    autoprefixer    = require('gulp-autoprefixer'),
+    connect         = require('gulp-connect');
 
 gulp.task('less', function () {
     return gulp.src(['./less/*.less', '!./less/variables.less'])
