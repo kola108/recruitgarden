@@ -1,39 +1,50 @@
-@test: red;
-@aux-test: blue;
-@test-padding: 20px;
 @primary-color: #0B8B41;
-@secordary-color: #fff;
-// @section-margin: ;
-// @general-font-size: ;
+@secondary-color: @white-color;
+@black-color: #000000;
+@white-color: #FFFFFF;
+
 @font-face {
-    font-family: 'studio_sansbold';
-    src: url('../fonts/studiosans_bold-webfont.eot');
-    src: url('../fonts/studiosans_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/studiosans_bold-webfont.woff2') format('woff2'),
-         url('../fonts/studiosans_bold-webfont.woff') format('woff'),
-         url('../fonts/studiosans_bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'studio_sansbold';
+  src: url('../fonts/studiosans_bold-webfont.eot');
+  src: url('../fonts/studiosans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/studiosans_bold-webfont.woff2') format('woff2'),
+  url('../fonts/studiosans_bold-webfont.woff') format('woff'),
+  url('../fonts/studiosans_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-     font-family: 'studio_sansmedium';
-     src: url('./fonts/studiosans_medium-webfont.eot');
-     src: url('./fonts/studiosans_medium-webfont.eot?#iefix') format('embedded-opentype'),
-          url('./fonts/studiosans_medium-webfont.woff2') format('woff2'),
-          url('./fonts/studiosans_medium-webfont.woff') format('woff'),
-          url('./fonts/studiosans_medium-webfont.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
- }
+  font-family: 'studio_sansmedium';
+  src: url('../fonts/studiosans_medium-webfont.eot');
+  src: url('../fonts/studiosans_medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/studiosans_medium-webfont.woff2') format('woff2'),
+  url('../fonts/studiosans_medium-webfont.woff') format('woff'),
+  url('../fonts/studiosans_medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
-    font-family: 'studio_sansregular';
-    src: url('./fonts/studiosans-webfont.eot');
-    src: url('./fonts/studiosans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/studiosans-webfont.woff2') format('woff2'),
-         url('./fonts/studiosans-webfont.woff') format('woff'),
-         url('./fonts/studiosans-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'studio_sansregular';
+  src: url('../fonts/studiosans-webfont.eot');
+  src: url('../fonts/studiosans-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/studiosans-webfont.woff2') format('woff2'),
+  url('../fonts/studiosans-webfont.woff') format('woff'),
+  url('../fonts/studiosans-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aprecu_pro';
+  src: url('../fonts/ApercuPro.eot');
+  src: url('../fonts/ApercuPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ApercuPro.woff') format('woff'),
+  url('../fonts/ApercuPro.ttf') format('truetype'),
+  url("../fonts/ApercuPro.svg#ApercuPro") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -72,6 +83,7 @@
           url("../fonts/FontAwesome/fa-brands-400.ttf") format("truetype"),
           url("../fonts/FontAwesome/fa-brands-400.svg#fontawesome") format("svg");
  }
+
  .fa-twitter:before {content: '\f099';}
  .fa-facebook-f:before {content: '\f39e';}
  .fa-linkedin-in:before {content: '\f0e1';}
@@ -89,3 +101,36 @@
      font-family: 'Font Awesome 5 Free';
      font-weight: 900;
  }
+
+ h1 {
+   font-family: 'studio_sansbold';
+   font-weight: bold;
+   font-size: 116px;
+   line-height: 92px;
+   letter-spacing: 0.015em;
+ }
+
+  h2 {
+    font-size: 56px;
+    font-weight: bold;
+    color: @black-color;
+    line-height: 55px;
+    letter-spacing: 0.015em;
+  }
+
+  .main-button {
+    text-transform: uppercase;
+    background-color: @primary-color;
+    color: white;
+    border: none;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: @secondary-color;
+      color: @black-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }

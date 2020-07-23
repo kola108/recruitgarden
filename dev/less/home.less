@@ -1,10 +1,491 @@
 @import 'variables.less';
 
-.variable-width {
-  margin-top: 100px;
+
+header {
+  padding: 39px 0;
 }
 
-.slick-next,
-.slick-prev {
-  position: static;
+.container {
+  max-width: 1150px;
 }
+
+.home-page-head {
+  background-image: url("../img/Rectangle_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/*-----------------Header menu start-----------------*/
+
+.header-menu {
+  position: relative;
+}
+
+.burger-menu-btn-wrapper {
+  display: inline-block;
+  min-height: 20px;
+  min-width: 42px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.burger-menu-btn {
+  width: 42px;
+  height: 3px;
+  background-color: @black-color;
+  position: relative;
+  transition: all 0.2s linear;
+  z-index: 3;
+
+  &:after {
+    content: '';
+    width: 42px;
+    height: 3px;
+    background-color: @black-color;
+    display: block;
+    position: absolute;
+    top: 16px;
+    transition: all 0.2s linear;
+  }
+
+  &:before {
+    content: '';
+    width: 42px;
+    height: 3px;
+    background-color: @black-color;
+    display: block;
+    position: absolute;
+    top: 8px;
+    transition: all 0.2s linear;
+  }
+}
+
+.burger-menu-btn.active {
+  background-color: transparent;
+  width: 0;
+
+  &:after {
+    transform: rotate(40deg);
+    top: 8px;
+    width: 26px;
+  }
+
+  &:before {
+    transform: rotate(-40deg);
+    width: 26px;
+  }
+}
+
+.burger-menu-wrapper {
+  position: absolute;
+  min-width: 260px;
+  top: -20px;
+  left: -216px;
+  background-color: @white-color;
+  padding: 36px 60px;
+  z-index: 2;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+  min-height: 0;
+
+  &.active {
+    opacity: 1;
+    min-height: 380px;
+
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.burger-menu {
+  transition: all 0.2s linear;
+  display: none;
+}
+
+.burger-menu-link {
+  color: @black-color;
+  font-family: 'studio_sansregular';
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+  margin-bottom: 26px;
+  text-decoration: none !important;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.active,
+  &:hover {
+    color: @primary-color;
+    font-weight: bold;
+  }
+}
+
+/*-----------------Header menu end-----------------*/
+
+.header-candidates {
+  margin-right: 43px;
+  //font-family: AT Surt Expanded;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.home-page-title {
+  padding-top: 95px;
+}
+
+.title-left-content {
+  h1 {
+    max-width: 760px;
+  }
+}
+
+.title-right-content {
+  position: static;
+
+  img {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.title-btn-wrapper {
+  margin-top: 36px;
+  margin-bottom: 185px;
+
+  .main-button {
+    min-width: 234px;
+    min-height: 56px;
+
+    &:first-child {
+      margin-right: 32px;
+    }
+  }
+}
+
+/*--------------------modal start--------------------*/
+
+.modal-dialog {
+  min-width: 680px;
+  font-family: 'aprecu_pro';
+}
+
+.modal-content {
+  border-radius: 0;
+  background-color: @white-color;
+}
+
+.close-modal-icon {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  margin: 20px;
+}
+
+.modal-header {
+  border: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.modal-title {
+  text-align: center;
+
+  font-size: 22px;
+  line-height:27px;
+  letter-spacing: 0.015em;
+  margin-bottom: 22px;
+}
+
+.modal-body {
+  padding: 0 70px 60px 70px;
+}
+
+.modal-form {
+  text-align: right;
+
+  input,
+  select,
+  textarea {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #B3D2B6;
+    margin-bottom: 10px;
+    min-height: 46px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    &::placeholder {
+      color: @black-color
+    }
+  }
+
+  textarea {
+    resize: none;
+    padding-top: 20px;
+  }
+
+  .modal-file-loader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #B3D2B6;
+    margin-bottom: 10px;
+    min-height: 46px;
+    padding: 0 20px;
+
+    label {
+      min-width: 160px;
+      min-height: 36px;
+      background-color: #ECF1F4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      text-transform: uppercase;
+      //font-family: AT Surt Expanded;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      cursor: pointer;
+    }
+  }
+
+  .main-button {
+    min-width: 190px;
+    min-height: 56px;
+    margin-top: 12px;
+  }
+}
+
+/*--------------------modal end--------------------*/
+
+.about-us {
+  margin-top: 104px;
+}
+
+.about-us-text {
+  margin-top: 20px;
+  max-width: 557px;
+  font-family: 'aprecu_pro';
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+}
+
+.link-read-more {
+  margin-top: 30px;
+
+  a {
+    //font-family: AT Surt Expanded;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: @primary-color;
+  }
+
+  img {
+    display: inline-block;
+  }
+}
+
+.arrow-right {
+  margin-left: 20px;
+}
+
+.our-customers {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.our-customers-title {
+  padding-bottom: 240px;
+  max-width: 1150px;
+  margin: 0 auto;
+  background-image: url("../img/Vector_8.svg");
+  background-repeat: no-repeat;
+  background-position: left 28%;
+
+  h2 {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  p {
+    max-width: 470px;
+    margin: 20px auto 10px auto;
+    font-family: 'aprecu_pro';
+    font-size: 22px;
+    line-height:  27px;
+    letter-spacing: 0.015em;
+  }
+}
+
+.our-customers-text {
+  max-width: 428px;
+  border-top: 2px solid @primary-color;
+  padding-top: 45px;
+  margin: 0 auto;
+
+  p {
+    max-width: 400px;
+    font-family: 'aprecu_pro';
+    font-size: 24px;
+    line-height:30px;
+    letter-spacing: 0.015em;
+    text-align: justify;
+  }
+}
+
+.our-customers-partners {
+  max-width: 1440px;
+  margin: 104px auto 130px auto;
+}
+
+.our-customers-partner {
+  min-width: 428px;
+  min-height: 190px;
+  text-align: left;
+  padding: 30px;
+
+  &:nth-child(even) {
+    background-color: #F2FFE7;
+  }
+
+  h4 {
+    //font-family: AT Surt Expanded;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+    margin: 35px 0 9px 0;
+  }
+
+  p {
+    max-width: 270px;
+    font-family: 'aprecu_pro';
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+  }
+}
+
+.home-page-what-we-do {
+  padding-top: 296px;
+  padding-bottom: 222px;
+  background-image: url("../img/Rectangle_17.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .highlighted-header {
+    border-left: 4px solid @primary-color;
+    color: @primary-color;
+    padding-left: 18px;
+    margin-bottom: 58px;
+  }
+
+  .not-highlighted-header {
+    margin-left: 16px;
+  }
+}
+
+
+
+.what-we-do-right-content {
+  padding-left: 70px;
+  padding-top: 8px;
+
+  p {
+    font-family: 'aprecu_pro';
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    padding-bottom: 25px;
+  }
+
+  .main-button {
+    min-width: 162px;
+    min-height: 57px;
+  }
+}
+
+.what-we-do-img {
+  position: absolute;
+}
+
+.home-page-blog-carousel {
+  margin-top: 260px;
+  position: relative;
+  padding-bottom: 280px;
+}
+
+.blog-carousel-flower-img {
+  position: absolute;
+  left: -16px;
+  bottom: 58px;
+}
+
+/*-------------Blog carousel start-------------*/
+
+.carousel-arrows-wrapper {
+  max-width: 1150px;
+  margin: 0 auto 80px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carousel-prev-arrow,
+.carousel-next-arrow {
+  cursor: pointer;
+  margin-left: 30px;
+
+  &.slick-disabled {
+    opacity: 0.4;
+    cursor: auto;
+  }
+}
+
+.blog-carousel-item {
+  min-height: 350px;
+  padding-left: 90px
+}
+
+.blog-carousel-item-img,
+.blog-carousel-item-description {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blog-carousel-item-description {
+  padding-left: 40px;
+  padding-top: 20px;
+  max-width: 450px;
+}
+
+.blog-item-date {
+  font-family: 'aprecu_pro';
+  font-size: 18px;
+  line-height: 11px;
+  letter-spacing: 0.015em;
+  margin-bottom: 26px;
+}
+
+.blog-item-header {
+  font-family: 'studio_sansmedium';
+  font-size: 42px;
+  line-height: 39px;
+  letter-spacing: 0.015em;
+}
+
+/*-------------Blog carousel end-------------*/

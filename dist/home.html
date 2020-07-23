@@ -13,42 +13,319 @@
     <script src="js/home.min.js"></script>
 </head>
 <body>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="home-page-head">
+        <div class="container">
+            <header class="row">
+                <div class="col-6">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/RecruitGarden_logo.svg" alt="logo">
+                        </a>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    ...
+                <div class="col-6 d-flex justify-content-end">
+                    <p class="header-candidates">30000 candidates</p>
+                    <div class="header-menu">
+                        <div class="burger-menu-btn-wrapper">
+                            <div class="burger-menu-btn"></div>
+                        </div>
+                        <div class="burger-menu-wrapper">
+                            <nav class="burger-menu">
+                                <a class="burger-menu-link active" href="#">Home</a>
+                                <a class="burger-menu-link" href="#">About</a>
+                                <a class="burger-menu-link" href="#">What we do</a>
+                                <a class="burger-menu-link" href="#">Vacancies</a>
+                                <a class="burger-menu-link" href="#">Candidates</a>
+                                <a class="burger-menu-link" href="#">Reviews</a>
+                                <a class="burger-menu-link" href="#">News</a>
+                                <a class="burger-menu-link" href="#">Contact us</a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+            </header>
+            <section class="row home-page-title">
+                <div class="title-left-content col-8">
+                    <h1>When cooperation is fruitful</h1>
+                    <div class="title-btn-wrapper">
+                        <button class="main-button" data-toggle="modal" data-target="#looking-for-job">Looking for job</button>
+                        <button class="main-button" data-toggle="modal" data-target="#looking-for-talent">Looking for talent</button>
+                    </div>
+                </div>
+                <div class="title-right-content col-4">
+                    <img src="img/Illustration.svg" alt="Illustration">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <section class="row about-us">
+            <div class="col-12">
+                <h2>A few words about us:</h2>
+                <p class="about-us-text">RecruitGarden is a creative staffing agency doing things a little differently.</p>
+                <div class="link-read-more">
+                    <a href="#">
+                        <span>read more</span>
+                        <img src="img/Arrow_1.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="our-customers">
+        <div class="our-customers-title">
+            <h2>Our customers love what we do</h2>
+            <p> Over 500.000 companies of all sizes use RecruitGarden to understand their business and their market better.</p>
+            <div class="link-read-more">
+                <a href="#">
+                    <span>read more</span>
+                    <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+        <div class="our-customers-text">
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story
+                and let your users know a little more about you.
+            </p>
+        </div>
+        <div class="our-customers-partners d-flex justify-content-around">
+            <div class="our-customers-partner">
+                <img src="img/Sephora_logo_1.svg" alt="partner-logo">
+                <h4>Adam Kant</h4>
+                <p>Business Development Manager Venture Capital Firm</p>
+            </div>
+            <div class="our-customers-partner">
+                <img src="img/Sephora_logo_1.svg" alt="partner-logo">
+                <h4>Adam Kant</h4>
+                <p>Business Development Manager Venture Capital Firm</p>
+            </div>
+            <div class="our-customers-partner">
+                <img src="img/Sephora_logo_1.svg" alt="partner-logo">
+                <h4>Adam Kant</h4>
+                <p>Business Development Manager Venture Capital Firm</p>
+            </div>
+        </div>
+    </section>
+    <div class="home-page-what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2 class="highlighted-header">What we do:</h2>
+                    <h2 class="not-highlighted-header">How we do it:</h2>
+                </div>
+                <div class="col-7 what-we-do-right-content">
+                    <p>Hire the right IT-talents for you <img class="arrow-right" src="img/Arrow_2.svg" alt="arrow"></p>
+                    <p>Insights about IT-market in Ukraine</p>
+                    <p>Creation of your employer brand</p>
+                    <p>Build a highly effective recruitment process</p>
+                    <button class="main-button">more</button>
+                    <img class="what-we-do-img" src="img/Vector_9.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="carousel-prev-arrow">Prev</div>
-    <div class="carousel-next-arrow">Next</div>
-
-    <div class="variable-width">
-        <div style="width: 800px; height: 300px; background-color: green;">your content1</div>
-        <div style="width: 800px; height: 300px; background-color: blue;">your content2</div>
-        <div style="width: 800px; height: 300px; background-color: red;">your content3</div>
-        <div style="width: 800px; height: 300px; background-color: gray;">your content4</div>
-        <div style="width: 800px; height: 300px; background-color: yellow;">your content5</div>
+    <div class="home-page-blog-carousel">
+        <div class="carousel-arrows-wrapper">
+            <div class="carousel-prev-arrow"><img src="img/Arrow_4.svg" alt="carousel-arrow-prev"></div>
+            <div class="carousel-next-arrow"><img src="img/Arrow_3.svg" alt="carousel-arrow-next"></div>
+        </div>
+        <div class="blog-carousel">
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-carousel-item">
+                <div class="blog-carousel-item-img">
+                    <img src="img/cooins-photo_1.jpg" alt="image">
+                </div>
+                <div class="blog-carousel-item-description">
+                    <p class="blog-item-date">12 march 2020</p>
+                    <h3 class="blog-item-header">2020 HR Statistics: Job Search, Hiring, Recruiting & Interviews</h3>
+                    <div class="link-read-more">
+                        <a href="#">
+                            <span>read more</span>
+                            <img class="arrow-right" src="img/Arrow_1.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="blog-carousel-flower-img" src="img/flower.svg" alt="flower">
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Modal looking-for-job -->
+    <div class="modal fade" id="looking-for-job" tabindex="-1" role="dialog" aria-labelledby="looking-for-job-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="close-modal-icon" src="img/Close.svg" alt="close" data-dismiss="modal">
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Send us your CV and we’ll keep your resume on file for future references</h5>
+                    <form class="modal-form" action="#">
+                        <input placeholder="Your name" type="text" name="employee-name">
+                        <input placeholder="Your email" type="email" name="employee-email">
+                        <select placeholder="Location" name="employee-location">
+                            <option value="" disabled selected>Location</option>
+                            <option value="">Kharkiv</option>
+                            <option value="">Kyiv</option>
+                            <option value="">Lviv</option>
+                        </select>
+                        <select placeholder="Choose category" name="employee-category">
+                            <option value="" disabled selected>Choose category</option>
+                            <option value="">developer</option>
+                            <option value="">employer</option>
+                            <option value="">manager</option>
+                        </select>
+                        <div class="modal-file-loader">
+                            <input type="file" id="modal-employee-file" name="employee-file" hidden>
+                            <span>Choose CV</span>
+                            <label for="modal-employee-file">Choose File</label>
+                        </div>
+                        <textarea placeholder="Message" name="employee-textarea" cols="30" rows="10"></textarea>
+                        <button type="submit" class="main-button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal looking-for-job -->
+
+    <!-- Start Modal looking-for-talent -->
+    <div class="modal fade" id="looking-for-talent" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="close-modal-icon" src="img/Close.svg" alt="close" data-dismiss="modal">
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Fill out the form and we'll find a candidate for you</h5>
+                    <form class="modal-form" action="#">
+                        <input placeholder="Your name" type="text" name="employer-name">
+                        <input placeholder="Your email" type="email" name="employer-email">
+                        <select placeholder="Location" name="employer-location">
+                            <option value="" disabled selected>Location</option>
+                            <option value="">Kharkiv</option>
+                            <option value="">Kyiv</option>
+                            <option value="">Lviv</option>
+                        </select>
+                        <select placeholder="Choose category" name="employer-category">
+                            <option value="" disabled selected>Choose category</option>
+                            <option value="">developer</option>
+                            <option value="">employer</option>
+                            <option value="">manager</option>
+                        </select>
+                        <div class="modal-file-loader">
+                            <input type="file" id="modal-employer-file" name="employer-file" hidden>
+                            <span>Choose Doc</span>
+                            <label for="modal-employer-file">Choose File</label>
+                        </div>
+                        <textarea placeholder="Message" name="employer-textarea" cols="30" rows="10"></textarea>
+                        <button type="submit" class="main-button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal looking-for-talent -->
 </body>
 </html>
