@@ -102,12 +102,13 @@
 .fa-linkedin-in:before {content: '\f0e1';}
 
 .fab {
-   font-family: 'Font Awesome 5 Brands';
-   font-style: normal;
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  transition: all 0.3s linear;
 
-   &:hover{
-        color: gray;
-   }
+  &:hover{
+      color: @primary-color;
+  }
 }
 
 .fa,.fas,.far {
@@ -166,6 +167,8 @@ h2 {
   color: white;
   border: none;
   transition: all 0.3s linear;
+  position: relative;
+  z-index: 1;
 
   &:hover {
     background-color: @secondary-color;
