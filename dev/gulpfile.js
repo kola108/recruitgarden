@@ -35,7 +35,8 @@ gulp.task('watch', function () {
     connect.server({
         livereload: true,
         root: '../dist'
-    });
+      });
+
     gulp.watch('../dist/*.html', gulp.task('html'));
     gulp.watch('./less/*.less', gulp.task('less'));
     gulp.watch('./js/*.js', gulp.task('js-minify'));
