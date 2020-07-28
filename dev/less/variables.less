@@ -48,6 +48,17 @@
 }
 
 @font-face {
+  font-family: 'AT_Surt_Exp';
+  src: url('../fonts/ATSurt-RegularExp.eot');
+  src: url('../fonts/ATSurt-RegularExp.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ATSurt-RegularExp.woff2') format('woff2'),
+  url('../fonts/ATSurt-RegularExp.woff') format('woff'),
+  url('../fonts/ATSurt-RegularExp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
      font-family: 'Font Awesome 5 Free';
      font-style: normal;
      font-weight: 900;
@@ -91,12 +102,13 @@
 .fa-linkedin-in:before {content: '\f0e1';}
 
 .fab {
-   font-family: 'Font Awesome 5 Brands';
-   font-style: normal;
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  transition: all 0.3s linear;
 
-   &:hover{
-        color: gray;
-   }
+  &:hover{
+      color: @primary-color;
+  }
 }
 
 .fa,.fas,.far {
@@ -155,6 +167,8 @@ h2 {
   color: white;
   border: none;
   transition: all 0.3s linear;
+  position: relative;
+  z-index: 1;
 
   &:hover {
     background-color: @secondary-color;

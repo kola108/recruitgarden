@@ -131,7 +131,7 @@ header {
 
 .header-candidates {
   margin-right: 43px;
-  //font-family: AT Surt Expanded;
+  font-family: 'AT_Surt_Exp';
   font-size: 14px;
   line-height: 17px;
 }
@@ -233,37 +233,37 @@ header {
     padding-top: 20px;
   }
 
-  .modal-file-loader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border: 1px solid #B3D2B6;
-    margin-bottom: 10px;
-    min-height: 46px;
-    padding: 0 20px;
-
-    label {
-      min-width: 160px;
-      min-height: 36px;
-      background-color: #ECF1F4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      text-transform: uppercase;
-      //font-family: AT Surt Expanded;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 12px;
-      cursor: pointer;
-    }
-  }
-
   .main-button {
     min-width: 190px;
     min-height: 56px;
     margin-top: 12px;
+  }
+}
+
+.modal-file-loader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #B3D2B6;
+  margin-bottom: 10px;
+  min-height: 46px;
+  padding: 0 20px;
+
+  label {
+    min-width: 160px;
+    min-height: 36px;
+    background-color: #ECF1F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'AT_Surt_Exp';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    cursor: pointer;
   }
 }
 
@@ -286,7 +286,7 @@ header {
   margin-top: 30px;
 
   a {
-    //font-family: AT Surt Expanded;
+    font-family: 'AT_Surt_Exp';
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -345,6 +345,7 @@ header {
     line-height:30px;
     letter-spacing: 0.015em;
     text-align: justify;
+    margin-left: 14px;
   }
 }
 
@@ -364,7 +365,7 @@ header {
   }
 
   h4 {
-    //font-family: AT Surt Expanded;
+    font-family: 'AT_Surt_Exp';
     font-weight: bold;
     font-size: 22px;
     line-height: 22px;
@@ -490,6 +491,10 @@ header {
 
 /*-------------Blog carousel end-------------*/
 
+.contact-wrapper {
+  padding-top: 50px;
+}
+
 .contact-text {
   font-size: 22px;
   line-height: 27px;
@@ -519,7 +524,7 @@ header {
 }
 
 .map-image {
-  transform: translate(10%, -10%);
+  margin-left: 30px;
 }
 
 footer {
@@ -527,11 +532,274 @@ footer {
 }
 
 .footer-nav {
+
   a {
     margin-left: 30px;
+    font-family: 'AT_Surt_Exp';
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
-.menu-social-icons li {
-  padding: 0 10px;
+.menu-social-icons {
+  padding: 0;
 }
+
+
+/*------------media queries start--------------*/
+
+@media all and (max-width: 1302px) {
+  .our-customers-partners {
+    justify-content: normal;
+    flex-direction: column;
+  }
+
+  .our-customers-partner {
+    text-align: center;
+
+    p {
+      margin: 0 auto;
+    }
+  }
+
+  .carousel-arrows-wrapper {
+    margin-right: 12px;
+  }
+}
+
+@media all and (max-width: 1140px) {
+  .title-right-content {
+    img {
+      display: none;
+    }
+  }
+
+  .map-image {
+    max-width: 90%;
+  }
+}
+
+
+@media all and (max-width: 1118px) {
+  .what-we-do-img {
+    right: 0;
+  }
+
+  .our-customers-title {
+    background-image: none;
+  }
+
+  .our-customers {
+    margin-top: 100px;
+  }
+
+  .our-customers-title {
+    padding-bottom: 100px;
+
+    h2 {
+      padding: 0 10px;
+    }
+  }
+
+  .home-page-what-we-do {
+    padding-top: 100px;
+  }
+
+  .our-customers-partners {
+    margin-bottom: 60px;
+  }
+
+  .blog-carousel-item {
+    padding-left: 4vw;
+  }
+
+  .blog-carousel-item-img {
+    max-width: 40vw;
+    min-width: 260px;
+  }
+
+  .blog-carousel-item-description {
+    max-width: 40vw;
+    padding-left: 2vw;
+    padding-top: 1vw;
+
+    h3 {
+      font-size: 3.5vw;
+      line-height: 4vw;
+    }
+
+    .link-read-more {
+      margin-top: 2vw;
+    }
+  }
+
+  .blog-carousel-flower-img {
+    display: none;
+  }
+
+  .home-page-blog-carousel {
+    padding-bottom: 2vw;
+  }
+}
+
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 14vw;
+    line-height: 12vw;
+  }
+
+  h2 {
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+
+  .about-us {
+    margin-top: 0;
+  }
+
+  .our-customers-title {
+
+     h2 {
+       padding: 0 10px;
+     }
+  }
+
+  .home-page-what-we-do {
+    padding-bottom: 100px;
+
+    .not-highlighted-header {
+      margin-bottom: 60px;
+    }
+  }
+  
+  .what-we-do-img {
+    display: none;
+  }
+
+  .what-we-do-right-content {
+    padding-left: 30px;
+
+    p {
+      padding-bottom: 10px;
+    }
+  }
+
+  .home-page-blog-carousel {
+    margin-top: 80px;
+  }
+
+  .contact-wrapper {
+    padding-top: 0;
+    padding-left: 40px;
+  }
+
+  footer {
+    padding-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .modal-dialog {
+    margin-left: 0;
+    min-width: 100%;
+  }
+}
+
+@media all and (max-width: 552px) {
+  .title-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main-button:first-child {
+      margin:  0 0 14px 0;
+    }
+  }
+
+  .home-page-blog-carousel {
+    display: none;
+  }
+
+  .contact-wrapper {
+    padding-top: 40px;
+  }
+}
+
+@media all and (max-width: 518px) {
+  p,
+  a,
+  span {
+    font-size: 16px !important;
+  }
+
+  .header-candidates {
+    display: none;
+  }
+
+  .our-customers-text {
+    width: 90%;
+  }
+
+  .our-customers-partner {
+    min-width: 100%;
+  }
+
+  .modal-body {
+    padding: 0 10px 10px;
+  }
+
+  .what-we-do-right-content {
+    .arrow-right {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  h1 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .contact-wrapper {
+    padding-left: 10px;
+  }
+  
+  .contact-info {
+    padding-left: 10px;
+
+    img {
+      display: none;
+    }
+  }
+
+  .modal-dialog {
+
+    input,
+    select,
+    textarea {
+      font-size: 14px;
+    }
+
+  }
+
+  .modal-file-loader {
+
+    span {
+      font-size: 14px !important;
+    }
+
+    label {
+      min-width: 100px;
+    }
+  }
+}
+
+/*------------media queries end--------------*/
+
+
