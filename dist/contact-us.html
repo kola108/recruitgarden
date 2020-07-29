@@ -4,11 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-us</title>
-    <link rel="stylesheet" href="vendors/bootstrap.min.css">
-    <link rel="stylesheet" href="css/contact-us.min.css">
-    <script src="js/contact-us.min.js"></script>
+    <link rel="stylesheet" href="css/vendors.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="row">
+            <div class="col-6">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/RecruitGarden_logo.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <p class="header-candidates">30000 candidates</p>
+                <div class="header-menu">
+                    <div class="burger-menu-btn-wrapper">
+                        <div class="burger-menu-btn"></div>
+                    </div>
+                    <div class="burger-menu-wrapper">
+                        <nav class="burger-menu">
+                            <ul>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link active" href="#">Home</a>
+                                </li>
+                                <li class="burger-menu-item"> 
+                                    <a class="burger-menu-link" href="#">About</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">What we do</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Vacancies</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Candidates</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Reviews</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">News</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="row contact-us-page-contacts">
+            <div class="col-12 text-center contact-us-description">
+                <h2 class="primary-header">Contact us</h2>
+                <p class="contact-text m-auto">
+                    Tell us about your painful vacancies and we'll fill them.<br>
+                    Drop us a line to see how<br>
+                    it works.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 contact-wrapper">
+                <ul class="contact-info">
+                    <li>
+                        <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>Kyiv, Ukraine</span>
+                    </li>
+                    <li>
+                        <a href="mailto:admin@recruitgarden.com">
+                            <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>admin@recruitgarden.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380503017302">
+                            <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>Tel (+380) 503017302</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-socials d-none d-md-flex flex-row">
+                    <li>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    </li>
+                </ul>
+                <div class="home-page-form">
+                    <h5 class="form-title">Send us a message</h5>
+                    <div lang="en-US" dir="ltr">
+                        <div></div>
+                        <form class="form" action="#0.2_wpcf7-f12-o1" method="post" enctype="multipart/form-data" target="_blank" onsubmit="try {return window.confirm(&quot;Определенные ограничения безопасности могут нарушить работу данной формы.\nПродолжить?&quot;);} catch (e) {return false;}">
+                            <div style="display:none">
+                                <input type="hidden" name="_wpcf7" value="12">
+                                <input type="hidden" name="_wpcf7_version" value="5.2">
+                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12-o1">
+                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                            </div>
+                            <p>
+                                <span>
+                                    <input placeholder="Your name" type="text" name="employee-name" size="40">
+                                </span>
+        
+                                <span>
+                                    <input placeholder="Your name" type="text" name="employee-name" size="40">
+                                    <div class="alert alert-danger">
+                                        The field is required.
+                                    </div>
+                                    <br>
+                                </span>
+                                <br>
+                                <span><input placeholder="Your email" type="email" name="employee-email" size="40"></span>
+                                <br>
+                                <span>
+                                    <select placeholder="Location" name="employee-location">
+                                        <option value="" disabled>---</option>
+                                        <option value="Location" disabled selected>Location</option>
+                                        <option value="Kharkiv">Kharkiv</option>
+                                        <option value="Kyiv">Kyiv</option>
+                                        <option value="Lviv">Lviv</option>
+                                    </select>
+                                </span>
+                                <br>
+                                <span>
+                                    <select name="employer-category-example">
+                                        <option value="" disabled>---</option>
+                                        <option value="Choose category" disabled selected>Choose category</option>
+                                        <option value="developer">developer</option>
+                                        <option value="employer">employer</option>
+                                        <option value="manager">manager</option>
+                                    </select>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="form-file-loader">
+                                    <input type="file" id="modal-employee-file" name="employee-file" hidden size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv">
+                                    <span>Choose CV</span>
+                                    <br>
+                                    <label for="modal-employee-file">Choose File</label>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <textarea placeholder="Message" name="employee-textarea" cols="40" rows="10"></textarea>
+                                </span>
+                            </p>
+                            <p>
+                                <input type="submit" value="Send" class="main-button">
+                            </p>
+                            
+                            <div></div>
+                            
+                            <div class="alert alert-danger" role="alert">
+                                One or more fields have an error. Please check and try again.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-none d-md-flex">
+                <img class="map-image" src="img/pic_Kyiv_map.svg" alt="map">
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col-lg-2 col-md-10 col-6 logo">
+                <a href="#">
+                    <img src="img/RecruitGarden_logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="col-lg-8 d-lg-flex d-none footer-nav justify-content-end align-items-center">
+                <ul class="d-flex">
+                    <li class="footer-nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Vacancies</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Employee Pages</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-lg-2 col-md-2 col-6 footer-menu-socials">
+                <ul class="menu-social-icons d-flex justify-content-around">
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>

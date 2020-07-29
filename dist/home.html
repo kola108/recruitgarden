@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="vendors/bootstrap.min.css">
-    <link rel="stylesheet" href="vendors/slick.min.css">
-    <link rel="stylesheet" href="css/home.min.css">
-    <script src="vendors/jquery.min.js"></script>
-    <script src="vendors/slick.min.js"></script>
-    <script src="vendors/bootstrap.min.js"></script>
-    <script src="js/home.min.js"></script>
+    <link rel="stylesheet" href="css/vendors.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
 </head>
 <body>
     <div class="home-page-head">
@@ -31,14 +28,32 @@
                         </div>
                         <div class="burger-menu-wrapper">
                             <nav class="burger-menu">
-                                <a class="burger-menu-link active" href="#">Home</a>
-                                <a class="burger-menu-link" href="#">About</a>
-                                <a class="burger-menu-link" href="#">What we do</a>
-                                <a class="burger-menu-link" href="#">Vacancies</a>
-                                <a class="burger-menu-link" href="#">Candidates</a>
-                                <a class="burger-menu-link" href="#">Reviews</a>
-                                <a class="burger-menu-link" href="#">News</a>
-                                <a class="burger-menu-link" href="#">Contact us</a>
+                                <ul>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link active" href="#">Home</a>
+                                    </li>
+                                    <li class="burger-menu-item"> 
+                                        <a class="burger-menu-link" href="#">About</a>
+                                    </li>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link" href="#">What we do</a>
+                                    </li>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link" href="#">Vacancies</a>
+                                    </li>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link" href="#">Candidates</a>
+                                    </li>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link" href="#">Reviews</a>
+                                    </li>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link" href="#">News</a>
+                                    </li>
+                                    <li class="burger-menu-item">
+                                        <a class="burger-menu-link" href="#">Contact us</a>
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
                     </div>
@@ -46,14 +61,14 @@
             </header>
             <section class="row home-page-title">
                 <div class="title-left-content col-lg-8 col-md-12">
-                    <h1>When cooperation is fruitful</h1>
+                    <h1 class="title-left-content-header main-header">When cooperation is fruitful</h1>
                     <div class="title-btn-wrapper">
-                        <button class="main-button" data-toggle="modal" data-target="#looking-for-job">Looking for job</button>
-                        <button class="main-button" data-toggle="modal" data-target="#looking-for-talent">Looking for talent</button>
+                        <a class="main-button" data-toggle="modal" data-target="#looking-for-job">Looking for job</a>
+                        <a class="main-button" data-toggle="modal" data-target="#looking-for-talent">Looking for talent</a>
                     </div>
                 </div>
                 <div class="title-right-content d-none d-md-block col-4">
-                    <img src="img/Illustration.svg" alt="Illustration">
+                    <img class="title-right-content-img" src="img/Illustration.svg" alt="Illustration">
                 </div>
             </section>
         </div>
@@ -61,7 +76,7 @@
     <div class="container">
         <section class="row about-us">
             <div class="col-12">
-                <h2>A few words about us:</h2>
+                <h2 class="primary-header primary-header">A few words about us:</h2>
                 <p class="about-us-text">RecruitGarden is a creative staffing agency doing things a little differently.</p>
                 <div class="link-read-more">
                     <a href="#">
@@ -74,8 +89,8 @@
     </div>
     <section class="our-customers">
         <div class="our-customers-title">
-            <h2>Our customers love what we do</h2>
-            <p> Over 500.000 companies of all sizes use RecruitGarden to understand their business and their market better.</p>
+            <h2 class="our-customers-title-header primary-header">Our customers love what we do</h2>
+            <p class="our-customers-title-text"> Over 500.000 companies of all sizes use RecruitGarden to understand their business and their market better.</p>
             <div class="link-read-more">
                 <a href="#">
                     <span>read more</span>
@@ -91,19 +106,19 @@
         </div>
         <div class="our-customers-partners d-flex justify-content-around">
             <div class="our-customers-partner">
-                <img src="img/Sephora_logo_1.svg" alt="partner-logo">
-                <h4>Adam Kant</h4>
-                <p>Business Development Manager Venture Capital Firm</p>
+                <img class="our-customers-partner-logo" src="img/Sephora_logo_1.svg" alt="partner-logo">
+                <h4 class="our-customers-partner-header">Adam Kant</h4>
+                <p class="our-customers-partner-description">Business Development Manager Venture Capital Firm</p>
             </div>
             <div class="our-customers-partner">
-                <img src="img/Sephora_logo_1.svg" alt="partner-logo">
-                <h4>Adam Kant</h4>
-                <p>Business Development Manager Venture Capital Firm</p>
+                <img class="our-customers-partner-logo" src="img/Sephora_logo_1.svg" alt="partner-logo">
+                <h4 class="our-customers-partner-header">Adam Kant</h4>
+                <p class="our-customers-partner-description">Business Development Manager Venture Capital Firm</p>
             </div>
             <div class="our-customers-partner">
-                <img src="img/Sephora_logo_1.svg" alt="partner-logo">
-                <h4>Adam Kant</h4>
-                <p>Business Development Manager Venture Capital Firm</p>
+                <img class="our-customers-partner-logo" src="img/Sephora_logo_1.svg" alt="partner-logo">
+                <h4 class="our-customers-partner-header">Adam Kant</h4>
+                <p class="our-customers-partner-description">Business Development Manager Venture Capital Firm</p>
             </div>
         </div>
     </section>
@@ -111,15 +126,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12">
-                    <h2 class="highlighted-header">What we do:</h2>
-                    <h2 class="not-highlighted-header">How we do it:</h2>
+                    <h2 class="highlighted-header primary-header">What we do:</h2>
+                    <h3 class="not-highlighted-header primary-header">How we do it:</h3>
                 </div>
                 <div class="col-md-7 col-sm-12 what-we-do-right-content">
                     <p>Hire the right IT-talents for you <img class="arrow-right" src="img/Arrow_2.svg" alt="arrow"></p>
                     <p>Insights about IT-market in Ukraine</p>
                     <p>Creation of your employer brand</p>
                     <p>Build a highly effective recruitment process</p>
-                    <button class="main-button">more</button>
+                    <a href="#" class="main-button">more</a>
                     <img class="what-we-do-img" src="img/Vector_9.svg" alt="">
                 </div>
             </div>
@@ -242,23 +257,23 @@
     <div class="container">
         <section class="row home-page-contact">
             <div class="col-md-5 col-sm-12 contact-wrapper">
-                <h2>Contact</h2>
+                <h2 class="primary-header">Contact</h2>
                 <p class="contact-text">
                     Tell us about your painful vacancies and we'll fill them.<br>
                     Drop us a line to see how it works.
                 </p>
                 <ul class="contact-info">
                     <li>
-                        <img src="img/Arrow-right.svg" alt="image"><span>Kyiv, Ukraine</span>
+                        <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>Kyiv, Ukraine</span>
                     </li>
                     <li>
                         <a href="mailto:admin@recruitgarden.com">
-                            <img src="img/Arrow-right.svg" alt="image"><span>admin@recruitgarden.com</span>
+                            <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>admin@recruitgarden.com</span>
                         </a>
                     </li>
                     <li>
                         <a href="tel:+380503017302">
-                            <img src="img/Arrow-right.svg" alt="image"><span>Tel (+380) 503017302</span>
+                            <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>Tel (+380) 503017302</span>
                         </a>
                     </li>
                 </ul>
@@ -285,27 +300,43 @@
                 </a>
             </div>
             <nav class="col-lg-8 d-lg-flex d-none footer-nav justify-content-end align-items-center">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Reviews</a>
-                <a href="#">Vacancies</a>
-                <a href="#">Employee Pages</a>
-                <a href="#">News</a>
-                <a href="#">Contact us</a>
+                <ul class="d-flex">
+                    <li class="footer-nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Vacancies</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Employee Pages</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
             </nav>
-            <div class="col-lg-2 col-md-2 col-6 footer-menu-socials">
-                    <ul class="menu-social-icons d-flex justify-content-around">
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
-                </div>
+            <nav class="col-lg-2 col-md-2 col-6 footer-menu-socials">
+                <ul class="menu-social-icons d-flex justify-content-around">
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </div>
 
@@ -318,29 +349,76 @@
                 </div>
                 <div class="modal-body">
                     <h5 class="modal-title">Send us your CV and we’ll keep your resume on file for future references</h5>
-                    <form class="modal-form" action="#">
-                        <input placeholder="Your name" type="text" name="employee-name">
-                        <input placeholder="Your email" type="email" name="employee-email">
-                        <select placeholder="Location" name="employee-location">
-                            <option value="" disabled selected>Location</option>
-                            <option value="">Kharkiv</option>
-                            <option value="">Kyiv</option>
-                            <option value="">Lviv</option>
-                        </select>
-                        <select placeholder="Choose category" name="employee-category">
-                            <option value="" disabled selected>Choose category</option>
-                            <option value="">developer</option>
-                            <option value="">employer</option>
-                            <option value="">manager</option>
-                        </select>
-                        <div class="modal-file-loader">
-                            <input type="file" id="modal-employee-file" name="employee-file" hidden>
-                            <span>Choose CV</span>
-                            <label for="modal-employee-file">Choose File</label>
-                        </div>
-                        <textarea placeholder="Message" name="employee-textarea" cols="30" rows="10"></textarea>
-                        <button type="submit" class="main-button">Send</button>
-                    </form>
+                    <div lang="en-US" dir="ltr">
+                        <div></div>
+                        <form class="form" action="#0.2_wpcf7-f12-o1" method="post" enctype="multipart/form-data" target="_blank" onsubmit="try {return window.confirm(&quot;Определенные ограничения безопасности могут нарушить работу данной формы.\nПродолжить?&quot;);} catch (e) {return false;}">
+                            <div style="display:none">
+                                <input type="hidden" name="_wpcf7" value="12">
+                                <input type="hidden" name="_wpcf7_version" value="5.2">
+                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12-o1">
+                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                            </div>
+                            <p>
+                                <span>
+                                    <input placeholder="Your name" type="text" name="employee-name" size="40">
+                                </span>
+
+                                <span>
+                                    <input placeholder="Your name" type="text" name="employee-name" size="40">
+                                    <div class="alert alert-danger">
+                                        The field is required.
+                                    </div>
+                                    <br>
+                                </span>
+                                <br>
+                                <span><input placeholder="Your email" type="email" name="employee-email" size="40"></span>
+                                <br>
+                                <span>
+                                    <select placeholder="Location" name="employee-location">
+                                        <option value="" disabled>---</option>
+                                        <option value="Location" disabled selected>Location</option>
+                                        <option value="Kharkiv">Kharkiv</option>
+                                        <option value="Kyiv">Kyiv</option>
+                                        <option value="Lviv">Lviv</option>
+                                    </select>
+                                </span>
+                                <br>
+                                <span>
+                                    <select name="employer-category-example">
+                                        <option value="" disabled>---</option>
+                                        <option value="Choose category" disabled selected>Choose category</option>
+                                        <option value="developer">developer</option>
+                                        <option value="employer">employer</option>
+                                        <option value="manager">manager</option>
+                                    </select>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="form-file-loader">
+                                    <input type="file" id="modal-employee-file" name="employee-file" hidden size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv">
+                                    <span>Choose CV</span>
+                                    <br>
+                                    <label for="modal-employee-file">Choose File</label>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <textarea placeholder="Message" name="employee-textarea" cols="40" rows="10"></textarea>
+                                </span>
+                            </p>
+                            <p>
+                                <input type="submit" value="Send" class="main-button">
+                            </p>
+                            
+                            <div></div>
+                            
+                            <div class="alert alert-danger" role="alert">
+                                One or more fields have an error. Please check and try again.
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -356,29 +434,76 @@
                 </div>
                 <div class="modal-body">
                     <h5 class="modal-title">Fill out the form and we'll find a candidate for you</h5>
-                    <form class="modal-form" action="#">
-                        <input placeholder="Your name" type="text" name="employer-name">
-                        <input placeholder="Your email" type="email" name="employer-email">
-                        <select placeholder="Location" name="employer-location">
-                            <option value="" disabled selected>Location</option>
-                            <option value="">Kharkiv</option>
-                            <option value="">Kyiv</option>
-                            <option value="">Lviv</option>
-                        </select>
-                        <select placeholder="Choose category" name="employer-category">
-                            <option value="" disabled selected>Choose category</option>
-                            <option value="">developer</option>
-                            <option value="">employer</option>
-                            <option value="">manager</option>
-                        </select>
-                        <div class="modal-file-loader">
-                            <input type="file" id="modal-employer-file" name="employer-file" hidden>
-                            <span>Choose Doc</span>
-                            <label for="modal-employer-file">Choose File</label>
-                        </div>
-                        <textarea placeholder="Message" name="employer-textarea" cols="30" rows="10"></textarea>
-                        <button type="submit" class="main-button">Send</button>
-                    </form>
+                    <div lang="en-US" dir="ltr">
+                        <div></div>
+                        <form class="form" action="#0.2_wpcf7-f12-o1" method="post" enctype="multipart/form-data" target="_blank" onsubmit="try {return window.confirm(&quot;Определенные ограничения безопасности могут нарушить работу данной формы.\nПродолжить?&quot;);} catch (e) {return false;}">
+                            <div style="display:none">
+                                <input type="hidden" name="_wpcf7" value="12">
+                                <input type="hidden" name="_wpcf7_version" value="5.2">
+                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12-o1">
+                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                            </div>
+                            <p>
+                                <span>
+                                    <input placeholder="Your name" type="text" name="employee-name" size="40">
+                                </span>
+
+                                <span>
+                                    <input placeholder="Your name" type="text" name="employee-name" size="40">
+                                    <div class="alert alert-danger">
+                                        The field is required.
+                                    </div>
+                                    <br>
+                                </span>
+                                <br>
+                                <span><input placeholder="Your email" type="email" name="employee-email" size="40"></span>
+                                <br>
+                                <span>
+                                    <select placeholder="Location" name="employee-location">
+                                        <option value="" disabled>---</option>
+                                        <option value="Location" disabled selected>Location</option>
+                                        <option value="Kharkiv">Kharkiv</option>
+                                        <option value="Kyiv">Kyiv</option>
+                                        <option value="Lviv">Lviv</option>
+                                    </select>
+                                </span>
+                                <br>
+                                <span>
+                                    <select name="employer-category-example">
+                                        <option value="" disabled>---</option>
+                                        <option value="Choose category" disabled selected>Choose category</option>
+                                        <option value="developer">developer</option>
+                                        <option value="employer">employer</option>
+                                        <option value="manager">manager</option>
+                                    </select>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="form-file-loader">
+                                    <input type="file" id="modal-employer-file"  name="employee-file" hidden size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv">
+                                    <span>Choose Doc</span>
+                                    <br>
+                                    <label for="modal-employer-file">Choose File</label>
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <textarea placeholder="Message" name="employee-textarea" cols="40" rows="10"></textarea>
+                                </span>
+                            </p>
+                            <p>
+                                <input type="submit" value="Send" class="main-button">
+                            </p>
+                            
+                            <div></div>
+                            
+                            <div class="alert alert-danger" role="alert">
+                                One or more fields have an error. Please check and try again.
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
