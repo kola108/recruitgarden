@@ -10,69 +10,80 @@
     <script src="js/main.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="header-wrapper d-flex justify-content-between align-items-center">
-                    <div class="header-left">
-                        <div class="logo">
-                            <a href="#">
-                                <img src="img/RecruitGarden_logo.svg" alt="logo">
-                            </a>
-                        </div>
+    <div class="container">
+        <header class="row">
+            <div class="col-6">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/RecruitGarden_logo.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <p class="header-candidates">30000 candidates</p>
+                <div class="header-menu">
+                    <div class="burger-menu-btn-wrapper">
+                        <div class="burger-menu-btn"></div>
                     </div>
-                    <div class="header-right d-flex justify-content-between align-items-center">
-                        <div class="header-right-span">
-                            <span>30000 candidates</span>
-                        </div>
-                        <div class="header-right-toggler">
-                            <button class="btn-toggle">
-                                <svg width="42" height="20" viewBox="0 0 42 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 2H42" stroke="black" stroke-width="3"/>
-                                    <path d="M0 10H42" stroke="black" stroke-width="3"/>
-                                    <path d="M0 18H42" stroke="black" stroke-width="3"/>
-                                </svg>
-                            </button>
-                        </div>
+                    <div class="burger-menu-wrapper">
+                        <nav class="burger-menu">
+                            <ul>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link active" href="#">Home</a>
+                                </li>
+                                <li class="burger-menu-item"> 
+                                    <a class="burger-menu-link" href="#">About</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">What we do</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Vacancies</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Candidates</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Reviews</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">News</a>
+                                </li>
+                                <li class="burger-menu-item">
+                                    <a class="burger-menu-link" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="section section-about-primary">
-        <div class="container">
-            <div class="row">
-                <div class="section-title">
-                    <h2 class="section-title-left">
-                        We don’t hunt. We don’t catch. We create fertile ground for the right communication.
-                    </h2>
-                </div>
+        </header>
+        <section class="row about-page-title">
+            <div class="col-12">
+                <h2 class="primary-header">
+                    We don’t hunt. We don’t catch. We create fertile ground for the right communication.
+                </h2>
+                <p class="section-content-text">
+                    Founded in 2020, our company makes IT-recruiting in Ukraine more: 
+                </p>
+                <ul class="section-content-list">
+                    <li>- effective</li>
+                    <li>- transparent</li>
+                    <li>- attractive</li>
+                </ul>
+                <img src="img/pic_inkpot.svg" alt="image">
             </div>
-            <div class="wrapper-col-6 d-flex col-12">
-                 <div class="col-6 col-12">
-                    <div class="section-content">
-                        <p class="section-content-text">
-                            Founded in 2020, our company makes IT-recruiting in Ukraine more: 
-                        </p>
-                        <ul class="section-content-list">
-                            <li>- effective</li>
-                            <li>- transparent</li>
-                            <li>- attractive</li>
-                        </ul>
-                    </div>
-                 </div>
-                 <div class="col-6 col-illustration">
-                    <img src="img/pic_inkpot.svg" alt="image">
-                 </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    
+
+
     <section class="section section-about-alternative">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 col-12">
                     <div class="col-image">
-                        <img src="img/pic_team.png" alt="image">
+                        <img src="img/Photo.jpg" alt="image">
                     </div>
                     <div class="col-image-illustration">
                         <img src="img/pic_banana.svg" alt="image">
@@ -92,102 +103,101 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <div class="section-title section-title-center">
+
+
+
+    <div class="container">
+        <section class="row home-page-contact"><!-- !!!!!!!!!!!!!!!!!!!!!!!! -->
+            <div class="col-12">
                 <h2>Start promoting jobs on 100+ platforms for free</h2>
+                <a class="main-button">JOIN US</a>
             </div>
-            <div class="section-button section-button-center">
-                <button class="btn btn-primary">JOIN US</button>
+        </section>
+        <section class="row home-page-contact">
+            <div class="col-md-5 col-sm-12 contact-wrapper">
+                <h2 class="primary-header">Contact</h2>
+                <p class="contact-text">
+                    Tell us about your painful vacancies and we'll fill them.<br>
+                    Drop us a line to see how it works.
+                </p>
+                <ul class="contact-info">
+                    <li>
+                        <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>Kyiv, Ukraine</span>
+                    </li>
+                    <li>
+                        <a href="mailto:admin@recruitgarden.com">
+                            <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>admin@recruitgarden.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380503017302">
+                            <img class="contact-info-arrow" src="img/Arrow-right.svg" alt="image"><span>Tel (+380) 503017302</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-socials d-none d-md-flex flex-row">
+                    <li>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="wrapper-col-6 d-flex col-12">
-                    <div class="col-6 col-12">
-                        <div class="contact-col-title">
-                            <h2>Contact</h2>
-                        </div>
-                        <div class="contact-col-text">
-                            <p>
-                                Tell us about your painful vacancies and we'll fill them.<br>
-                                Drop us a line to see how it works.
-                            </p>
-                        </div>
-                        <div class="contact">
-                            <ul class="contact-info">
-                                <li>
-                                    <img src="img/Arrow-right.svg" alt="image""><span>Kyiv, Ukraine</span>
-                                </li>
-                                <li>
-                                    <a href="mailto:admin@recruitgarden.com">
-                                        <img src="img/Arrow-right.svg" alt="image""><span>admin@recruitgarden.com</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+380503017302">
-                                        <img src="img/Arrow-right.svg" alt="image""><span>Tel (+380) 503017302</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="menu-socials">
-                                <ul class="menu-socials-icon d-flex justify-content-between">
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-12">
-                        <div class="col-map-image">
-                            <img src="img/pic_Kyiv_map.svg" alt="image">
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-7 d-none d-md-flex">
+                <img class="map-image" src="img/pic_Kyiv_map.svg" alt="map">
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrapper d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/RecruitGarden_logo.svg" alt="logo">
-                    </a>
-                </div>
-                <nav class="footer-nav">
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Vacancies</a>
-                    <a href="#">Employee Pages</a>
-                    <a href="#">News</a>
-                    <a href="contact-us.html">Contact us</a>
-                </nav>
-                <div class="menu-socials">
-                    <ul class="menu-socials-icon d-flex justify-content-between">
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
-                </div>
+        </section>
+        <footer class="row">
+            <div class="col-lg-2 col-md-10 col-6 logo">
+                <a href="#">
+                    <img src="img/RecruitGarden_logo.svg" alt="logo">
+                </a>
             </div>
-        </div>
-    </footer>
+            <nav class="col-lg-8 d-lg-flex d-none footer-nav justify-content-end align-items-center">
+                <ul class="d-flex">
+                    <li class="footer-nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Vacancies</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Employee Pages</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-lg-2 col-md-2 col-6 footer-menu-socials">
+                <ul class="menu-social-icons d-flex justify-content-around">
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+
 </body>
 </html>
