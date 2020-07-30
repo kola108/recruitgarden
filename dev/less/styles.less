@@ -361,6 +361,10 @@ a {
 
   /*--------------------Form start--------------------*/
 
+  .form-wrapper {
+    margin-top: 150px;
+  }
+
   .form {
     text-align: right;
   
@@ -744,6 +748,12 @@ header {
   
   .map-image {
     margin-left: 30px;
+    max-width: 609px;
+    max-height: 634px;
+  }
+
+  .home-page-contact {
+    margin-bottom: 100px;
   }
   
   footer {
@@ -1029,13 +1039,31 @@ header {
 
 /*----------------Contact us page start------------------*/
 
+.contact-us-page-contacts {
+  margin-bottom: 270px;
+
+  .contact-wrapper {
+    padding-top: 0;
+  }
+}
+
 .contact-us-description {
   padding-top: 100px;
+  margin-bottom: 80px;
   background-image: url('../img/Vector_2.svg');
   background-repeat: no-repeat;
   background-position: 76% 80%;
 }
 
-.home-page-form {
-  margin-top: 150px;
+/*----------------Contact us page end------------------*/
+
+
+/*---------Contact us page media queries start--------*/
+
+@media all and (max-width: 1118px) {
+  .contact-us-page-contacts {
+    margin-bottom: 80px;
+  }
 }
+
+/*---------Contact us page media queries end--------*/
