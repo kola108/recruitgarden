@@ -146,7 +146,7 @@ a {
     font-size: 56px;
     font-weight: bold;
     color: @black-color;
-    line-height: 55px;
+    line-height: 58px;
     letter-spacing: 0.015em;
 }
 
@@ -554,7 +554,7 @@ header {
     margin-top: 104px;
   }
   
-  .about-us-text {
+  .about-page-text {
     margin-top: 20px;
     max-width: 557px;
     font-family: 'apercu_pro';
@@ -968,7 +968,8 @@ header {
 @media all and (max-width: 518px) {
   p,
   a,
-  span {
+  span,
+  li {
     font-size: 16px !important;
   }
 
@@ -996,12 +997,12 @@ header {
 }
 
 @media all and (max-width: 350px) {
-  h1 {
+  .main-header {
     font-size: 38px;
     line-height: 38px;
   }
 
-  h2 {
+  .primary-header {
     font-size: 28px;
     line-height: 30px;
   }
@@ -1073,3 +1074,157 @@ header {
 }
 
 /*---------Contact us page media queries end--------*/
+
+
+/*----------------About page start------------------*/
+.about-page-title-wrapper {
+  margin-top: 105px;
+  padding-bottom: 220px;
+  position: relative;
+
+  .primary-header {
+    max-width: 867px;
+  }
+}
+
+.about-page-title-description,
+.about-page-title-list {
+  font-family: 'apercu_pro';
+  font-size: 22px;
+  line-height:  27px;
+  letter-spacing: 0.015em;
+}
+
+.about-page-title-description {
+  max-width: 430px;
+  margin-top: 20px;
+}
+
+.about-page-title-list {
+  margin-top: 14px;
+}
+
+.about-page-title-img {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+}
+
+.about-page-description {
+  padding: 205px 0 195px 0;
+  background-image: url('../img/Back.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .primary-header {
+    max-width: 400px;
+    margin-top: 100px;
+  }
+}
+
+.about-page-description-left-content {
+  padding-left: 0;
+}
+
+.about-page-description-img-wrapper {
+  position: relative;
+  margin-right: 50px;
+}
+
+.about-page-description-img {
+  max-width: 671px;
+  height: auto;
+}
+
+.about-page-description-aux-img {
+  position: absolute;
+  bottom: -65px;
+  right: -50px;
+}
+
+
+.about-page-description-text {
+  max-width: 466px;
+  margin-top: 30px;
+  font-family: 'apercu_pro';
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+}
+
+.about-page-join-us {
+  margin-top: 148px;
+  margin-bottom: 160px;
+
+  .primary-header {
+    max-width: 860px;
+    margin: 0 auto 30px auto;
+  }
+
+  .main-button {
+    min-width: 182px;
+  }
+}
+
+.about-page-contact {
+  margin-bottom: 100px;
+}
+
+/*----------------About page end------------------*/
+
+
+/*---------About page media queries start--------*/
+
+@media all and (max-width: 1488px) {
+  .about-page-description-img {
+    width: 100%;
+  }
+
+  .about-page-description {
+
+    .primary-header {
+      margin-top: 5vw;
+    }
+  }
+}
+
+@media all and (max-width: 1365px) {
+  .about-page-title-img {
+    right: 0;
+  }
+}
+
+@media all and (max-width: 1060px) {
+  .about-page-title-img,
+  .about-page-description-aux-img {
+    display: none;
+  }
+
+  .about-page-title-wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .about-page-description {
+    padding: 10vw 0;
+  }
+
+  .about-page-description-img-wrapper {
+    padding: 0 0 0 15px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 518px) {
+  .about-page-title-wrapper {
+    margin-top: 40px;
+  }
+
+  .about-page-join-us {
+    margin: 10vw 0;
+  }
+}
+
+/*---------About page media queries end--------*/
