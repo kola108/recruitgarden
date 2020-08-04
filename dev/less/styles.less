@@ -286,32 +286,32 @@ a {
       }
     }
   }
-  
+
   .burger-menu {
     transition: all 0.2s linear;
     display: none;
   }
 
-  .burger-menu-item {
+  .menu-item {
     padding: 0;
     margin-bottom: 26px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  
-  .burger-menu-link {
     color: @black-color;
     font-family: 'studio_sansregular';
     font-size: 18px;
     line-height: 21px;
-    text-decoration: none !important;
-  
-    &.active,
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.current-menu-item,
     &:hover {
       color: @primary-color;
       font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
   
@@ -883,12 +883,12 @@ header {
 }
 
 @media all and (max-width: 767px) {
-  h1 {
+  .main-header {
     font-size: 14vw;
     line-height: 12vw;
   }
 
-  h2 {
+  .primary-header {
     font-size: 7vw;
     line-height: 7vw;
   }
