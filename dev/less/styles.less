@@ -134,8 +134,9 @@ a {
     }
 }
 
-header {
-  padding: 39px 0;
+header,
+footer {
+  padding: 40px 0;
 }
 
 .container {
@@ -286,7 +287,7 @@ header {
   
     &.active {
       opacity: 1;
-      min-height: 380px;
+      min-height: auto;
   
       .burger-menu {
         display: flex;
@@ -759,24 +760,21 @@ header {
   .home-page-contact {
     margin-bottom: 100px;
   }
-  
-  footer {
-    padding: 40px 0;
-  }
 
-  .footer-nav-item {
-    margin-left: 30px;
-  }
-  
-  .footer-nav {
-  
+  #footer-menu {
+    display: flex;
+
+    .menu-item {
+      margin-left: 30px;
+    }
+
     a {
       font-family: 'AT_Surt_Exp';
       font-size: 12px;
       line-height: 14px;
     }
   }
-  
+
   .menu-social-icons {
     padding: 0;
   }
