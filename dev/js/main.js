@@ -32,6 +32,10 @@ jQuery(document).ready(() => {
             burgerMenuBtn.removeClass('active')
         }
     })
+
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+        console.log({event})
+    }, false );
 })
 
 
