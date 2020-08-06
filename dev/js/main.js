@@ -34,7 +34,8 @@ jQuery(document).ready(() => {
     })
 
     document.addEventListener( 'wpcf7mailsent', function( event ) {
-        console.log({event})
+        jQuery('.modal').modal('hide')
+        jQuery('form').trigger("reset")
     }, false );
 })
 
