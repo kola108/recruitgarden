@@ -407,7 +407,7 @@ footer {
     }
   }
   
-  .form-file-loader {
+  .modal-file-loader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -416,6 +416,7 @@ footer {
     margin-bottom: 10px;
     min-height: 46px;
     padding: 0 20px;
+    position: relative;
   
     label {
       min-width: 160px;
@@ -432,6 +433,11 @@ footer {
       line-height: 12px;
       cursor: pointer;
     }
+  }
+
+  .file-loader-placeholder {
+    position: absolute;
+    left: 20px;
   }
 
   .form-title {
@@ -1031,7 +1037,8 @@ footer {
 
   }
 
-  .form-file-loader {
+  .modal-file-loader {
+    position: relative;
 
     span {
       font-size: 14px !important;
