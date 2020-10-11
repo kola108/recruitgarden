@@ -1430,6 +1430,37 @@ footer {
 /*----------OneBlog page start----------*/
   .oneblog-content {
     max-width: 936px;
+    margin-top: 40px;
+    .primary-header {
+      max-width: 820px;
+    }
+    .oneblog-text {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 45px 0;
+      max-width: 700px;
+    }
+    .oneblog-content-header {
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 34px;
+    }
+    .oneblog-image img:last-child {
+      position: absolute;
+      bottom: 80px;
+      right: 0px;
+      z-index: -1;
+    }
+  }
+
+  .oneblog-cite {
+    max-width: 700px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-left: 24px;
+    font-style: italic;
+    border-left: 4px solid @primary-color;
   }
 
   ul.oneblog-list li {
@@ -1444,14 +1475,27 @@ footer {
   }
 }
 
+  .home-page-blog-carousel {
+    margin-top: 110px;
+    padding-bottom: 0px;
+  }
+
   .blog-carousel-header {
     font-size: 46px;
     font-weight: 700;
     line-height: 42px;
   }
 
+  .blog-carousel-flower-img {
+    position: absolute;
+    left: -50px;
+    bottom: 100px;
+    z-index: -1;
+}
+
   .blog-carousel-item {
     padding-left: 0;
+    margin-left: 40px;
     .blog-carousel-item-img {
       max-width: 284px;
     }
@@ -1487,7 +1531,11 @@ footer {
     line-height: 46px;
     margin: 0 auto 30px;
   }
-  
+  // .slick-list {
+  //   overflow: visible;
+  // }
+
+
 
 /*----------OneBlog page end----------*/
 
