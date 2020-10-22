@@ -1719,6 +1719,10 @@ footer {
 
 /*----------WhatWeDo page start----------*/
 
+  .what-we-do {
+    margin-bottom: 180px;
+  }
+
   .what-we-do-title {
     margin-top: 80px;
     margin-bottom: 60px;
@@ -1774,12 +1778,240 @@ footer {
       line-height: 1.25;
     }
   }
+
+  .how-we-do {
+    h2 {
+      padding-top: 60px;
+    }
+  }
   
   .any-questions {
     background-color: #EFF6FF;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 27%);
+    margin-bottom: 80px;
+    
+    .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+    }
   }
+
+  .any-questions-title {
+    justify-content: center;
+    text-align: center;
+    padding-top: 260px;
+    padding-bottom: 40px;
+  }
+
+  .how-we-do-right {
+    h2 {
+      padding-bottom: 60px;
+    }
+    
+    h3 {
+      color: #62A0F9;
+      font-size: 54px;
+      line-height: 1.25;
+    }
+
+    p {
+      max-width: 225px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+  }
+
+  .how-we-do-left {
+    position: relative;
+  }
+
+  .how-we-do-left-wrapper {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-152px, 14px);
+  }  
+  
 /*----------WhatWeDo page end------------*/
 
 /*----------WhatWeDo page media queries start---*/
+
+@media all and (max-width: 1488px) {
+  
+}
+
+@media all and (max-width: 1365px) {
+  
+}
+
+@media all and (max-width: 1118px) {
+  
+}
+@media all and (max-width: 1060px) {
+  
+}
+
+@media all and (max-width: 992px) {
+  
+  
+}
+
+@media all and (max-width: 767px) {
+  
+  }
+
+  @media all and (max-width: 576px) {
+    .primary-header {
+      font-size: 44px;
+      line-height: 1;
+      text-align: center;
+    }
+    
+  }
+
+  @media all and (max-width: 518px) {
+    .what-we-do {
+      margin-bottom: 0px;
+    }
+    
+    .primary-header {
+      font-size: 36px;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    .what-we-do-title {
+      margin-top: 10px;
+      margin-bottom: 60px;
+    }
+
+    .inner {
+      & > div {
+        padding-left: 105px;
+        position: relative;
+        margin-bottom: 70px;
+  
+        img {
+          position: absolute;
+          left: 5px;
+          top: -25px;
+          z-index: -1;
+        }
+  
+        &:nth-of-type(4) img {
+          top: -20px;
+        }
+        &:nth-of-type(2) p {
+          max-width: 250px;
+        }
+      }
+  
+      & > :last-child {
+        padding-top: 40px;
+      }
+  
+      h3 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.1;
+      padding-bottom: 12px;
+      }
+      
+      p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.25;
+      }
+    }
+
+    .how-we-do {
+      flex-direction: column-reverse;
+    }
+
+    .how-we-do-right {
+      padding-bottom: 250px;
+    
+    h2 {
+      padding-bottom: 20px;
+    }
+
+    & > div > h3 {
+    padding-bottom: 40px;
+    }
+
+  p {
+    max-width: 225px;
+    font-size: 22px;
+    line-height: 1.25;
+    }
+  }
+
+  .how-we-do-left-wrapper {
+    transform: translate(-7px,-250px);
+  }
+
+  .how-we-do-right-inner > div {
+    padding-bottom: 40px;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+    
+  .any-questions-title {
+    text-align: center;
+  }
+}
+
+  @media all and (max-width: 350px) {
+    .what-we-do {
+      margin-bottom: 25px;
+    }
+    
+    .primary-header {
+      font-size: 36px;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    .what-we-do-title {
+      margin-top: 10px;
+      margin-bottom: 60px;
+    }
+
+    .inner {
+      & > div {
+        padding-left: 80px;
+        margin-bottom: 70px;
+  
+        img {
+          position: absolute;
+          left: -10px;
+          top: -23px;
+          width: 48%;
+        }
+  
+        &:nth-of-type(4) img {
+          top: -20px;
+        }
+        &:nth-of-type(2) p {
+          max-width: 250px;
+        }
+      }
+  
+      & > :last-child {
+        padding-top: 40px;
+      }
+  
+      h3 {
+      font-size: 28px;
+      padding-bottom: 12px;
+      }
+      
+      p {
+        font-size: 18px;
+      }
+    }
+  }
 
 /*----------WhatWeDo page media queries end-----*/
