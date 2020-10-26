@@ -1859,7 +1859,7 @@ footer {
     &:nth-of-type(4) img {
       top: 115px;
     }
-    
+
   }
 
 }
@@ -2176,4 +2176,83 @@ footer {
   }
 }
 
-/*----------WhatWeDo page media queries end-----*/
+/*---------WhatWeDo page media queries end-----*/
+
+
+/*---------404 error page start----------*/
+
+.error-wrapper {
+  padding-top: 175px;
+  padding-bottom: 285px;
+  overflow: hidden;
+}
+
+.error-header {
+  font-size: 125px;
+  font-family: 'studio_sansbold';
+  font-weight: 700;
+  line-height: 0.93;
+  text-shadow: 3px 1px #0B8B41;
+  position: relative;
+
+  & + img {
+    position: absolute;
+    z-index: -1;
+    transform: translate(10px, -215px);
+  } 
+
+}
+
+.error-text {
+  font-family: 'appapercu_pro';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.error-page-button {
+  margin-top: 30px;
+
+  .error-page-button-content {
+    font-size: 14px;
+    line-height: 1.2;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+    
+}
+
+/*---------404 error page end------------*/
+
+
+/*---------404 error page media queries start---*/
+
+@media all and (max-width: 518px) {
+  .error-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+
+}
+
+@media all and (max-width: 350px) {
+  .error-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+  }
+
+  .error-header {
+    font-size: 100px;
+  
+    & + img {
+      transform: translate(10px, -155px);
+      max-width: 75%;
+    }
+  
+  }
+
+}
+
+/*---------404 error page media queries end-----*/
