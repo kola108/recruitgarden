@@ -2298,7 +2298,7 @@ footer {
   }
 
   .custom-select {
-    background: #ecf1f4 url(../img/shevron.svg) no-repeat right .75rem center/8px 10px;
+    background: #ecf1f4 url(../img/shevron.svg) no-repeat right .75rem center/12px 10px;
   }
 
 }
@@ -2455,14 +2455,42 @@ footer {
   box-shadow: none;
 }
 
+.custom-select:focus {
+  color: #000;
+} 
 
+.custom-select:hover {
+  cursor: pointer;
+  
+  option {
+    background: #ECF1F4;
+  }
+
+}
+
+select.custom-select {
+  color: #000;
+  padding-left: 12px;
+  padding-top: 6px;
+}
+
+.custom-select > option {
+  color: @black-color;
+  font-size: 10px;
+  line-height: 1.25;
+  font-weight: 400;
+  font-family: 'apercu_pro';
+  
+}
 
 
 /*---------Reviews page end---------------------*/
 
+
 /*---------Reviews page media queries start-----*/
 @media all and (max-width: 1488px) {
   
+
 }
 
 @media all and (max-width: 1365px) {
@@ -2481,66 +2509,96 @@ footer {
 }
 
 @media all and (max-width: 992px) {
-  
+  .header-filtration-left-title {
+    font-size: 34px;
+}
 
 }
 
 @media all and (max-width: 767px) {
-  
+  .header-filtration-left-title {
+    font-size: 32px;
+}
   
 }
 
 @media all and (max-width: 576px) {
-  
+  .header-filtration-right {
+
+    max-width: 275px;
+    div:nth-of-type(odd) {
+      padding-left: 0;
+    }
+
+  }
+
 }
 
-@media all and (max-width: 518px) {  
+@media all and (max-width: 518px) {
   .header-filtration-right {
     max-width: 275px;
+    padding-top: 30px;
+
     div {
+      padding-bottom: 12px;
+    }
+    
+    &:nth-of-type(odd) {
       padding-left: 0;
     }
 
   } 
-  
+
+.filtration-picture img {
+  position: absolute;
+  bottom: 92px;
+  left: 10px;
+  z-index: 1;
+  width: 26%;
 }
 
-.custom-select:active, 
-.custom-select:focus, .custom-select:hover {
-  background: #fff;
-  color: #0B8B41;
+.reset-chosen-filters a {
+  font-size: 12px;
 }
-
-.custom-select:active {
-  background: #ECF1F4;
-}
-
-.custom-select:focus-within {
-  background: #ECF1F4;
-}
-
-.custom-select > option {
-  background: @white-color;
-  width: 50px;
-  color: @black-color;
-  font-size: 10px;
-  line-height: 1.25;
-  font-weight: 400;
-  font-family: 'apercu_pro';
-}
-
-
 
 .chosen-filters-wrapper {
   flex-direction: column-reverse;
-
-  .reset-chosen-filters {
-    
-  }
+  position: absolute;
+  padding-top: 310px;
+  z-index: 10;
 }
 
-.chosen-filters {
-  flex-wrap: wrap;
+.top-agencies {
+  padding-top: 180px;
+}
+
+.agency-content .agency-content-vote {
+  padding-top: 80px;
+  padding-left: 60px;
+}
+
+.agency-content .agency-content-title span {
+  display: flex; 
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.agency-content .agency-content-title {
+  padding-left: 60px;
+}
+
+.agency-content-text {
+  padding-left: 60px; 
+}
+
+.chosen-filters .custom-select {
+  background: #fff url(../img/cross.svg) no-repeat right .75rem center/8px 10px;
+}
+
+.top-agencies-pagination {
+  padding-left: 40px;
+}
+
 }
 
 @media all and (max-width: 350px) {
