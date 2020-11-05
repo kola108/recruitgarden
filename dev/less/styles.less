@@ -1261,10 +1261,13 @@ footer {
     display: flex;
   }
 
-  .map-image {
-    margin-left: 0;
-    max-width: 100%;
+  .contact-map {
     margin-top: 90px;
+
+    .map-image {
+      margin-left: 0;
+      max-width: 100%;
+    }
   }
 
   .primary-header {
@@ -1369,14 +1372,29 @@ footer {
     display: flex;
   }
 
-  .map-image {
-    margin-left: 0;
-    max-width: 100%;
+  .contact-map {
     margin-top: 90px;
+
+    .map-image {
+      margin-left: 0;
+      max-width: 100%;
+    }
   }
 
   .primary-header {
     line-height: 1.2;
+  }
+
+  .contact-map {
+    position: relative;
+    height: 350px;
+    margin-bottom: 30px;
+
+    .map-image {
+      position: absolute;
+      left: -55px;
+      max-width: 114%;
+    }
   }
 
   footer {
@@ -1409,10 +1427,13 @@ footer {
     display: flex;
   }
 
-  .map-image {
-    margin-left: 0;
-    max-width: 100%;
+  .contact-map {
     margin-top: 90px;
+
+    .map-image {
+      margin-left: 0;
+      max-width: 100%;
+    }
   }
 
   .contact-info .contact-info-arrow {
@@ -1421,6 +1442,18 @@ footer {
 
   .primary-header {
     line-height: 1;
+  }
+
+  .contact-map {
+    position: relative;
+    height: 330px;
+    margin-bottom: 30px;
+
+    .map-image {
+      position: absolute;
+      left: -40px;
+      max-width: 120%;
+    }
   }
 }
 
@@ -1813,6 +1846,7 @@ footer {
       color: #62A0F9;
       font-size: 54px;
       line-height: 1.25;
+      font-family: 'apercu_pro';
     }
 
     p {
@@ -1830,7 +1864,7 @@ footer {
     position: absolute;
     z-index: 10;
     transform: translate(-166px, 7px);
-  }  
+  }
 
   .what-we-do-btn {
     padding: 16px 39px;
@@ -1844,10 +1878,6 @@ footer {
 
 /*----------WhatWeDo page media queries start---*/
 
-@media all and (max-width: 1488px) {
-  
-}
-
 @media all and (max-width: 1365px) {
   .inner > div {
     padding-left: 130px;
@@ -1859,9 +1889,7 @@ footer {
     &:nth-of-type(4) img {
       top: 115px;
     }
-
   }
-
 }
 
 @media all and (max-width: 1118px) {
@@ -1879,8 +1907,7 @@ footer {
     &:nth-of-type(4) img {
       top: 115px;
     }
-}
-
+  }
 }
 
 @media all and (max-width: 1060px) {
@@ -1899,7 +1926,6 @@ footer {
     &:nth-of-type(4) img {
       top: 115px;
     }
-
   }
 }
 
@@ -1919,9 +1945,13 @@ footer {
     &:nth-of-type(4) img {
       top: 115px;
     }
-
   }
+}
 
+@media all and (max-width: 846px) {
+  .contact-info {
+    font-size: 18px;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -1949,16 +1979,14 @@ footer {
     &:nth-of-type(4) img {
       top: 120px;
     }
-
   }
-
 }
 
 @media all and (max-width: 576px) {
   .primary-header {
     font-size: 44px;
     line-height: 1;
-    text-align: center;
+    text-align: left;
   }
 
   .what-we-do-title {
@@ -1985,7 +2013,6 @@ footer {
     &:nth-of-type(2) p {
       max-width: 250px;
     }
-
   }
 
   .inner > :last-child {
@@ -2002,13 +2029,27 @@ footer {
     .primary-header {
       text-align: left;
     }
-    
   }
 
   .how-we-do-left-wrapper {
     transform: translate(-30px,-382px);
   }
-  
+
+  .contact-info {
+    font-size: 22px;
+}
+
+  .contact-map {
+    position: relative;
+    height: 450px;
+    margin-bottom: 200px;
+
+    .map-image {
+      position: absolute;
+      left: -50px;
+      max-width: 110%;
+    }
+  }  
 }
 
 @media all and (max-width: 518px) {
@@ -2029,13 +2070,13 @@ footer {
 
   .inner {
     & > div {
-      padding-left: 105px;
+      padding-left: 87px;
       position: relative;
       margin-bottom: 70px;
 
       img {
         position: absolute;
-        left: 5px;
+        left: -15px;
         top: -25px;
         z-index: -1;
       }
@@ -2070,6 +2111,10 @@ footer {
     flex-direction: column-reverse;
   }
 
+  .how-we-do-left {
+    padding: 0;
+  }
+
   .how-we-do-right {
     padding-bottom: 250px;
   
@@ -2085,19 +2130,47 @@ footer {
       max-width: 225px;
       font-size: 22px;
       line-height: 1.25;
-      }
+    }
   }
 
   .how-we-do-left-wrapper {
-    transform: translate(-7px,-250px);
+    transform: translate(0px,-250px);
   }
 
   .how-we-do-right-inner > div {
     padding-bottom: 40px;
-  }  
-    
+  }
+  
+  .any-questions {
+    margin-bottom: 0;
+  }
+
+  .contact-wrapper {
+    padding-top: 80px;
+  }
+
   .any-questions-title {
     text-align: center;
+  }
+
+  .contact-wrapper {
+    padding-left: 15px;
+
+    span {
+      font-size: 22px;
+    }
+  }
+
+  .contact-map {
+    position: relative;
+    height: 450px;
+    margin-bottom: 30px;
+
+    .map-image {
+      position: absolute;
+      left: -55px;
+      max-width: 114%;
+    }
   }
 }
 
@@ -2155,8 +2228,12 @@ footer {
     transform: translate(-7px,-140px);
   }
 
+  .how-we-do h2 {
+    padding-top: 0px;
+  }
+
   .how-we-do-right {
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     margin-bottom: 50px;
   }
 
@@ -2170,8 +2247,33 @@ footer {
 
   .any-questions {
     padding: 0 10px;
+
     .primary-header {
       font-size: 32px;
+    }
+  }
+
+  .any-questions-title {
+    text-align: center;
+  }
+
+  .what-we-do-btn {
+    padding: 16px 10px;
+  }
+
+  .contact-wrapper  span {
+      font-size: 16px;
+  }
+
+  .contact-map {
+    position: relative;
+    height: 330px;
+    margin-bottom: 30px;
+
+    .map-image {
+      position: absolute;
+      left: -40px;
+      max-width: 120%;
     }
   }
 }
@@ -2204,7 +2306,7 @@ footer {
 }
 
 .error-text {
-  font-family: 'appapercu_pro';
+  font-family: 'apercu_pro';
   font-weight: 400;
   font-size: 22px;
   line-height: 1.25;
@@ -2233,7 +2335,6 @@ footer {
     padding-bottom: 100px;
     overflow: hidden;
   }
-
 }
 
 @media all and (max-width: 350px) {
@@ -2250,9 +2351,7 @@ footer {
       transform: translate(10px, -155px);
       max-width: 75%;
     }
-  
   }
-
 }
 
 /*---------404 error page media queries end-----*/
