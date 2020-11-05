@@ -570,7 +570,6 @@ footer {
       }
     }
   }
-
   
 .about-us {
     margin-top: 104px;
@@ -1715,8 +1714,7 @@ footer {
       display: flex;
       left: -48px;
       bottom: 154px;
-    }
-    
+    }    
   }
 
   @media all and (max-width: 350px) {
@@ -1752,7 +1750,15 @@ footer {
 
 /*----------WhatWeDo page start----------*/
 
+  #header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
   .what-we-do {
+    margin-top: 190px;
     margin-bottom: 180px;
   }
 
@@ -1879,6 +1885,10 @@ footer {
 /*----------WhatWeDo page media queries start---*/
 
 @media all and (max-width: 1365px) {
+  .what-we-do {
+    margin-top: 0;
+  }
+
   .inner > div {
     padding-left: 130px;
 
@@ -1893,6 +1903,10 @@ footer {
 }
 
 @media all and (max-width: 1118px) {
+  .what-we-do {
+    margin-top: 0;
+  }
+
   .how-we-do-left-wrapper {
     transform: translate(-31px,46px);
   }
@@ -1911,6 +1925,10 @@ footer {
 }
 
 @media all and (max-width: 1060px) {
+  .what-we-do {
+    margin-top: 0;
+  }
+
   .how-we-do-left-wrapper {
     transform: translate(-30px,105px);
   }
@@ -1955,6 +1973,10 @@ footer {
 }
 
 @media all and (max-width: 767px) {
+  .what-we-do {
+    margin-top: 0;
+  }
+
   .how-we-do-left-wrapper {
     transform: translate(-15px,-560px);
   }
@@ -1995,6 +2017,7 @@ footer {
 
   .what-we-do {
     margin-bottom: 50px;
+    margin-top: 0;
   }
   
   .inner > div {
@@ -2049,12 +2072,13 @@ footer {
       left: -50px;
       max-width: 110%;
     }
-  }  
+  }
 }
 
 @media all and (max-width: 518px) {
   .what-we-do {
     margin-bottom: 0px;
+    margin-top: 0;
   }
   
   .primary-header {
@@ -2360,13 +2384,20 @@ footer {
 
 /*---------Reviews page start-------------------*/
 
+#header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .header-menu {
   z-index: 100;
 }
 
 .container-alternative {
   background-color: #ECF1F4;
-  padding-top: 45px;
+  padding-top: 65px;
   padding-bottom: 40px;
 }
 
@@ -2400,7 +2431,6 @@ footer {
   .custom-select {
     background: #ecf1f4 url(../img/shevron.svg) no-repeat right .75rem center/12px 10px;
   }
-
 }
 
 .custom-select {
@@ -2557,7 +2587,7 @@ footer {
 
 .custom-select:focus {
   color: #000;
-} 
+}
 
 .custom-select:hover {
   cursor: pointer;
@@ -2565,7 +2595,6 @@ footer {
   option {
     background: #ECF1F4;
   }
-
 }
 
 select.custom-select {
@@ -2580,7 +2609,6 @@ select.custom-select {
   line-height: 1.25;
   font-weight: 400;
   font-family: 'apercu_pro';
-  
 }
 
 
@@ -2588,38 +2616,36 @@ select.custom-select {
 
 
 /*---------Reviews page media queries start-----*/
-@media all and (max-width: 1488px) {
+// @media all and (max-width: 1488px) {
   
 
-}
+// }
 
-@media all and (max-width: 1365px) {
+// @media all and (max-width: 1365px) {
   
 
-}
+// }
 
-@media all and (max-width: 1118px) {
+// @media all and (max-width: 1118px) {
   
 
-}
+// }
 
-@media all and (max-width: 1060px) {
+// @media all and (max-width: 1060px) {
   
 
-}
+// }
 
 @media all and (max-width: 992px) {
   .header-filtration-left-title {
     font-size: 34px;
-}
-
+  }
 }
 
 @media all and (max-width: 767px) {
   .header-filtration-left-title {
     font-size: 32px;
-}
-  
+  }  
 }
 
 @media all and (max-width: 576px) {
@@ -2629,12 +2655,14 @@ select.custom-select {
     div:nth-of-type(odd) {
       padding-left: 0;
     }
-
   }
-
 }
 
 @media all and (max-width: 518px) {
+  .container-alternative {
+    padding-top: 30px;
+  }
+
   .header-filtration-right {
     max-width: 275px;
     padding-top: 30px;
@@ -2646,8 +2674,7 @@ select.custom-select {
     &:nth-of-type(odd) {
       padding-left: 0;
     }
-
-  } 
+  }
 
 .filtration-picture img {
   position: absolute;
@@ -2666,46 +2693,45 @@ select.custom-select {
   position: absolute;
   padding-top: 310px;
   z-index: 10;
-}
+  }
 
 .top-agencies {
   padding-top: 180px;
-}
+  }
 
 .agency-content .agency-content-vote {
   padding-top: 80px;
   padding-left: 60px;
-}
+  }
 
 .agency-content .agency-content-title span {
   display: flex; 
   padding-left: 0;
   padding-top: 20px;
-}
+  }
 
 .agency-content .agency-content-title {
   padding-left: 60px;
-}
+  }
 
 .agency-content-text {
   padding-left: 60px; 
-}
+  }
 
 .chosen-filters .custom-select {
   background: #fff url(../img/cross.svg) no-repeat right .75rem center/8px 10px;
-}
+  }
 
 .top-agencies-pagination {
   padding-left: 40px;
+  }
 }
 
-}
-
-@media all and (max-width: 350px) {
+// @media all and (max-width: 350px) {
  
   
 
-}
+// }
 
 
 /*---------Reviews page media queries end-------*/
