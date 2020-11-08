@@ -2720,6 +2720,11 @@ select.custom-select {
     font-size: 32px;
   }
 
+  .custom-select-wrapper {
+    justify-content: flex-end;
+    padding-left: 0;
+  }
+
   .agency-content {
     .agency-content-title span {
       display: block;
@@ -2741,14 +2746,13 @@ select.custom-select {
   }
 
   .chosen-filters {
-    
     #select-3 {
       margin-left: 0;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     #select-4 {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 
@@ -2784,7 +2788,7 @@ select.custom-select {
     padding: 60px 0;
   }
   .container-alternative {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 
@@ -2799,6 +2803,7 @@ select.custom-select {
 
     #select-4 {
       margin-top: 15px;
+      width: 144px;
     }
   }
 
@@ -2835,7 +2840,7 @@ select.custom-select {
 
   .top-agencies {
     padding-top: 180px;
-    max-width: 351px;
+    max-width: 510px;
 
   .top-agencies-decor-image {
     position: absolute;
@@ -2847,7 +2852,7 @@ select.custom-select {
 
   .top-agencies-header {
     font-size: 36px;
-    max-width: 295px;
+    max-width: 500px;
   }
 }
 
@@ -2860,7 +2865,7 @@ select.custom-select {
   display: flex; 
   padding-left: 0;
   padding-top: 20px;
-  max-width: 170px;
+  max-width: 400px;
 }
 
 .agency-content .agency-content-title {
@@ -2885,19 +2890,69 @@ select.custom-select {
 }
 
 @media all and (max-width: 350px) {
+  #header {
+    padding: 60px 0;
+  }
+  .container-alternative {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }  
+
   .chosen-filters {
+    #select-2 {
+      margin-left: 10px;
+    }
+
     #select-3 {
       width: 125px;
     }
 
     #select-4 {
       width: 146px;
-      margin-left: 14px;
+      margin-left: 0px;
+    }
+  }
+
+  .header-filtration {
+    padding-top: 105px;
+
+    .header-filtration-left-title {
+      font-size: 30px;
+    }
+
+    .header-filtration-right {
+      padding-top: 30px;
+    }
+
+    .custom-select-wrapper {
+      justify-content: flex-start;
+      padding-left: 0;
+  
+      #select-1 {
+        width: 128px;
+      }
+
+      #select-2 {
+        width: 112px;
+        margin-left: 10px;
+      }
+
+      #select-3 {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 107px;
+      }
+  
+      #select-4 {
+        margin-top: 15px;
+        width: 133px;
+        margin-left: 10px;
+      }
     }
   }
   
   .top-agencies {
-    padding-top: 180px;
+    padding-top: 230px;
     max-width: 351px;
   
     .top-agencies-decor-image {
