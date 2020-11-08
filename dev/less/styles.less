@@ -2418,15 +2418,26 @@ footer {
 }
 
 .header-filtration-right {
+  align-items: center;
   padding: 0;
-  line-height: 36px;
 
-  .col-3 {
-    padding-right: 0;
+  #select-1 {
+    width: 138px;
+  }
 
-    &:not(:first-of-type) {
-      padding-left: 18px;
-    }
+  #select-2 {
+    width: 117px;
+    margin-left: 18px;
+  }
+
+  #select-3 {
+    width: 111px;
+    margin-left: 18px;
+  }
+
+  #select-4 {
+    width: 139px;
+    margin-left: 18px;
   }
 
   .custom-select {
@@ -2434,17 +2445,24 @@ footer {
   }
 }
 
+.custom-select-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+
 .custom-select {
   border-radius: 0;
   border: 1px solid #000;
   height: calc(1.5em + 0.95rem + 2px);
   padding-left: 12px;
+  font-family: 'apercu_pro';
   font-size: 10px;
   font-weight: 400;
   line-height: 1.25;
   color: #000;
   text-transform: uppercase;
-  background-color: #ECF1F4;
+  background-color: #ECF1F4;  
 
   &:focus {
     border-color: #000;
@@ -2461,19 +2479,31 @@ footer {
 
 .chosen-filters {
   padding: 0;
-  padding-top: 2px;
-
-  .col-3 {
-    padding-right: 0;
-
-    &:not(:last-of-type) {
-      padding-left: 18px;
-    }
-  }
+  align-items: center;
 
   .custom-select {
     background: #ecf1f4 url(../img/cross.svg) no-repeat right .75rem center/8px 10px;
   }
+
+  #select-1 {
+    width: 88px;
+  }
+
+  #select-2 {
+    width: 115px;
+    margin-left: 18px;
+  }
+
+  #select-3 {
+    width: 129px;
+    margin-left: 18px;
+  }
+
+  #select-4 {
+    width: 150px;
+    margin-left: 18px;
+  }
+
 }
 
 .reset-chosen-filters {
@@ -2709,17 +2739,22 @@ select.custom-select {
     top: 50%;
     transform: translate(5%, 68%);
   }
-}
 
-@media all and (max-width: 576px) {
-  .header-filtration-right {
-    max-width: 275px;
+  .chosen-filters {
+    
+    #select-3 {
+      margin-left: 0;
+      margin-top: 20px;
+    }
 
-    div:nth-of-type(odd) {
-      padding-left: 0;
+    #select-4 {
+      margin-top: 20px;
     }
   }
 
+}
+
+@media all and (max-width: 576px) {
   .top-agencies {
     padding-top: 180px;
     max-width: 350px;
@@ -2745,45 +2780,62 @@ select.custom-select {
 }
 
 @media all and (max-width: 518px) {
+  #header {
+    padding: 60px 0;
+  }
   .container-alternative {
     padding-top: 30px;
+    padding-bottom: 50px;
   }
 
-  .header-filtration-right {
-    max-width: 275px;
-    padding-top: 30px;
+  .custom-select-wrapper {
+    justify-content: flex-start;
+    padding-left: 0;
 
-    div {
-      padding-bottom: 12px;
+    #select-3 {
+      margin-left: 0;
+      margin-top: 15px;
     }
-    
-    &:nth-of-type(odd) {
-      padding-left: 0;
+
+    #select-4 {
+      margin-top: 15px;
     }
   }
 
-.filtration-picture img {
-  position: absolute;
-  bottom: 92px;
-  left: 10px;
-  z-index: 1;
-  width: 26%;
-}
+  .header-filtration {
+    padding-top: 105px;
 
-.reset-chosen-filters a {
-  font-size: 12px;
-}
+    .header-filtration-left-title {
+      font-size: 36px;
+    }
 
-.chosen-filters-wrapper {
-  flex-direction: column-reverse;
-  position: absolute;
-  padding-top: 310px;
-  z-index: 10;
-}
+    .header-filtration-right {
+      padding-top: 30px;
+    }
+  }
 
-.top-agencies {
-  padding-top: 180px;
-  max-width: 351px;
+  .filtration-picture img {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    z-index: 1;
+    width: 28%;
+  }
+
+  .reset-chosen-filters a {
+    font-size: 12px;
+  }
+
+  .chosen-filters-wrapper {
+    flex-direction: column-reverse;
+    position: absolute;
+    padding-top: 325px;
+    z-index: 10;
+  }
+
+  .top-agencies {
+    padding-top: 180px;
+    max-width: 351px;
 
   .top-agencies-decor-image {
     position: absolute;
@@ -2791,7 +2843,7 @@ select.custom-select {
     right: 0;
     top: 50%;
     transform: translate(0%, 17%);
-}
+  }
 
   .top-agencies-header {
     font-size: 36px;
@@ -2833,6 +2885,17 @@ select.custom-select {
 }
 
 @media all and (max-width: 350px) {
+  .chosen-filters {
+    #select-3 {
+      width: 125px;
+    }
+
+    #select-4 {
+      width: 146px;
+      margin-left: 14px;
+    }
+  }
+  
   .top-agencies {
     padding-top: 180px;
     max-width: 351px;
@@ -2895,7 +2958,7 @@ select.custom-select {
     .agency-content-logo {
       line-height: 40px;
     }
-  }  
+  }
 }
 
 
