@@ -2691,6 +2691,19 @@ select.custom-select {
 
 
 /*---------Reviews page media queries start-----*/
+@media all and (max-width: 1060px) {
+  .header-filtration-right {
+    #select-3 {
+      margin-left: 18px;
+      width: 116px;
+      margin-top: 0px;
+    }
+    #select-4 {
+      margin-top: 0px;
+    }
+  }
+}
+
 @media all and (max-width: 992px) {
   .header-filtration-left-title {
     font-size: 34px;
@@ -2703,6 +2716,17 @@ select.custom-select {
     top: 50%;
     transform: translate(20%, 40%);
   }
+
+  .header-filtration-right {
+    #select-3 {
+      margin-left: 18px;
+      width: 116px;
+      margin-top: 15px;
+    }
+    #select-4 {
+      margin-top: 15px;
+    }
+  }
 }
 
 @media all and (max-width: 846px) {
@@ -2712,6 +2736,33 @@ select.custom-select {
     right: 0;
     top: 50%;
     transform: translate(5%, 55%);
+  }
+
+  .header-filtration-right {
+  #select-3 {
+    margin-left: 18px;
+    width: 116px;
+    margin-top: 15px;
+  }
+  #select-4 {
+    margin-top: 15px;
+  }
+}
+
+  .chosen-filters {
+    #select-2 {
+      margin-left: 16px;
+    }
+
+    #select-3 {
+      margin-left: 16px;
+      margin-top: 0px;
+    }
+
+    #select-4 {
+      margin-top: 0px;
+      margin-left: 16px;
+    }
   }
 }
 
@@ -2755,7 +2806,6 @@ select.custom-select {
       margin-top: 15px;
     }
   }
-
 }
 
 @media all and (max-width: 576px) {
@@ -2847,7 +2897,7 @@ select.custom-select {
     z-index: -1;
     right: 0;
     top: 50%;
-    transform: translate(0%, 17%);
+    transform: translate(-7%, -9%);
   }
 
   .top-agencies-header {
