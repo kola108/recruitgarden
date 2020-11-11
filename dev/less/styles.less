@@ -2512,14 +2512,15 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   color: #074D31;
-  justify-content: flex-end;
+  text-align: end;  
 
   a {
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
     line-height: 36px;
     vertical-align: middle;
     letter-spacing: 0.5px;
+    padding-left: 15px;
   }
 }
 
@@ -2717,7 +2718,14 @@ select.custom-select {
     transform: translate(20%, 40%);
   }
 
+  .header-filtration-left-title {
+    margin-top: 15px;
+  }
   .header-filtration-right {
+    #select-1, #select-2 {
+      margin-top: 15px;
+    }
+
     #select-3 {
       margin-left: 18px;
       width: 116px;
