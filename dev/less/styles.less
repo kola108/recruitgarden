@@ -55,6 +55,16 @@
 }
 
 @font-face {
+  font-family: 'apercu_pro';
+  src: url('../fonts/ApercuPro-Light.eot'),
+  url('../fonts/ApercuPro-Light.woff') format('woff'),
+  url('../fonts/ApercuPro-Light.woff2') format('woff2'),
+  url('../fonts/ApercuPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'AT_Surt_Exp';
   src: url('../fonts/ATSurt-RegularExp.eot');
   src: url('../fonts/ATSurt-RegularExp.eot?#iefix') format('embedded-opentype'),
@@ -1483,9 +1493,10 @@ footer {
 
     .oneblog-image img:last-child {
       position: absolute;
-      bottom: 80px;
-      right: 0px;
+      bottom: 50%;
+      right: 0;
       z-index: -1;
+      transform: translate(1%, 80%);
     }
   }
 
@@ -1655,6 +1666,7 @@ footer {
 
       &:last-of-type p {
         margin: 20px 0;
+        max-width: 325px;
       }
 
       .primary-header {
