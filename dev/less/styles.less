@@ -1479,6 +1479,8 @@ footer {
     }
 
     .oneblog-text {
+      font-family: 'apercu_pro';
+      font-weight: normal;
       font-size: 18px;
       line-height: 26px;
       margin: 45px 0;
@@ -1511,6 +1513,7 @@ footer {
   }
 
   ul.oneblog-list li {
+    font-family: 'apercu_pro';
     text-decoration: underline;
     font-weight: 300;
     font-size: 18px;
@@ -1666,7 +1669,7 @@ footer {
 
       &:last-of-type p {
         margin: 20px 0;
-        max-width: 325px;
+        max-width: 340px;
       }
 
       .primary-header {
@@ -1690,20 +1693,18 @@ footer {
       }
 
       .oneblog-image img:last-child {
-        bottom: 150px;
+        position: absolute;
+        bottom: 50%;
+        right: 0;
+        z-index: -1;
+        transform: translate(0%, -58%);
+        width: 58%;
       }
     }
     
     .primary-header {
       font-size: 36px;
       line-height: 1;
-    }
-
-    .oneblog-image img:last-child {
-        position: absolute;
-        bottom: 80px;
-        right: 0;
-        z-index: -1;
     }
 
     .home-page-blog-carousel {
