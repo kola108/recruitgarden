@@ -74,26 +74,26 @@
                     </div>
                     <div class="header-filtration-right col-12 col-sm-6 col-md-5 col-lg-8 col-xl-8 d-flex flex-wrap justify-content-between">
                         <div class="custom-select-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-wrap">
-                            <select class="custom-select" id="select-1">
+                            <select class="custom-select" id="select-1" onchange="sortBy(event, 'review')">
                                 <option selected>Review Rating</option>
                                 <option value="1">5 stars</option>
                                 <option value="2">4 stars</option>
                                 <option value="3">3 stars</option>
                                 <option value="4">2 stars</option>
                             </select>
-                            <select class="custom-select select-2" id="select-2">
+                            <select class="custom-select select-2" id="select-2" onchange="sortBy(event, 'employees')">
                                 <option selected>Employees</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <select class="custom-select select-3" id="select-3">
+                            <select class="custom-select select-3" id="select-3" onchange="sortBy(event, 'location')">
                                 <option selected>Location</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <select class="custom-select select-4" id="select-4">
+                            <select class="custom-select select-4" id="select-4" onchange="sortBy(event, 'client')">
                                 <option selected>Client focus</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -202,12 +202,12 @@
                 <div class="top-agencies-pagination">
                     <nav aria-label="...">
                         <ul class="pagination pagination-lg">
-                            <li class="page-item">
+                            <!--<li class="page-item">
                                 <a class="page-link" href="./reviews.html?current_page=1">1</a>
                             </li>
                             <li class="page-item">
                                 <a class="page-link" href="./reviews.html?current_page=2">2</a></li>
-                            <!--<li class="page-item">
+                            <li class="page-item">
                                 <a class="page-link" href="#">3</a></li>
                             <li class="page-item">
                                 <a class="page-link" href="#">4</a></li>-->

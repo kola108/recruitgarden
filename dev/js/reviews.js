@@ -7,13 +7,19 @@ jQuery(document).ready(() => {
         method: 'GET',
         url: baseUrl + (window.location.search ? window.location.search : defaultParams),
         responseType: 'application/json'
-    }).then(response => {
-        posts = (response.data.data && response.data.data.posts)
-            ? response.data.data.posts
-            : []
-
-        renderPosts(posts)
     })
+        .then(response => {
+            posts = (response.data.data && response.data.data.posts)
+                ? response.data.data.posts
+                : []
+
+            renderPosts(posts)
+            generatePagination(response.data.data)
+        })
+        .catch( err => {
+            console.log(err)
+            renderPosts(posts)
+        })
 })
 
 function renderPosts(posts) {
@@ -47,4 +53,19 @@ function preparePost(post) {
             </div>
         </div>
    `)
+}
+
+function sortBy(event, option){
+    if (event && event.target.value) {
+        const {origin, pathname} = window.location
+        document.location.href = `${origin}${pathname}?sort_by_${option}=${event.target.value}`
+    }
+}
+
+function generatePagination(data) {
+    if (Number( data.total_pages)) {
+        for (let i = 1; i <= Number(data.total_pages); i++ ) {
+            jQuery('.pagination-lg').append( `<li class="page-item"><a class="page-link" href="./reviews.html?current_page=${i}">${i}</a></li>`)
+        }
+    }
 }
