@@ -2571,7 +2571,7 @@ footer {
   line-height: 1.25;
   color: #000;
   text-transform: uppercase;
-  background-color: #ECF1F4;  
+  background-color: #ECF1F4;
 
   &:focus {
     border-color: #000;
@@ -2680,25 +2680,22 @@ footer {
   }
 
   .agency-content-title span {
-    line-height: 50;
+    line-height: 50px;
     vertical-align: middle;
   }
 
-  .agency-content-vote {
+  .agency-content-author {
+    padding-top: 25px;
     padding-left: 75px;
     display: flex;
+    color: #074D31;
+    font-weight: 600;
 
     span {
-      font-family: 'apercu_pro';
-      padding-right: 15px;
-      font-size: 20px;
-      line-height: 1.25;
-
-      & + span {
-        padding-right: 5px;
-        display: flex;
-      }
+      padding-left: 10px;
+      font-weight: 400;
     }
+    
   }
 
   .agency-content-title {
@@ -2901,8 +2898,8 @@ select.custom-select {
     }
   }
 
-  .agency-content-vote {
-    padding-top: 60px;
+  .agency-content-author {
+    padding-top: 25px;
   }
 
   .top-agencies .top-agencies-decor-image {
@@ -2959,8 +2956,8 @@ select.custom-select {
       padding-top: 15px;
     }
 
-    .agency-content-vote {
-      padding-top: 60px;
+    .agency-content-author {
+      padding-top: 25px;
     }
   }
 
@@ -3092,9 +3089,18 @@ select.custom-select {
   }
 }
 
-.agency-content .agency-content-vote {
-  padding-top: 80px;
+.agency-content .agency-content-author {
+  font-size: 16px;
+  color: #074D31;
+  font-weight: 600;
+  line-height: 1.25;
   padding-left: 60px;
+
+  span {
+    color: #074D31;
+    font-weight: 400;
+    line-height: 1.25;
+  }
 }
 
 .agency-content .agency-content-title span {
@@ -3242,9 +3248,16 @@ select.custom-select {
       font-size: 30px;
     }
 
-    .agency-content-vote {
-      padding-top: 80px;
+    .agency-content-author {
+      padding-top: 25px;
       padding-left: 50px;
+      font-weight: 600;
+      color: #074D31;
+
+      span {
+        font-weight: 400;
+        color: #074D31;
+      }
     }
   
     .agency-content-header {
