@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="js/vendors.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script>
+        var reviews_data = {"104":{"title":"Strategies 360","description":"<p>Strategies 360 is one of the country\u2019s leading strategic positioning firms. With offices in ten western states and Washington, DC, we are experts at negotiating the political landscape, crafting content, building coalitions and targeting communications.<\/p>\n<p>We offer customized solutions and a full-service approach to public policy, marketing, communications, creative services, research and polling, federal and state lobbying and business strategy.<\/p>\n"},"103":{"title":"Capital Firm","description":"<p>We offer customized solutions and a full-service approach to public policy, marketing, communications, creative services, research and polling, federal and state lobbying and business strategy.<\/p>\n"},"101":{"title":"Blend","description":"<p>Blend is a creative production company. We develop and produce world-class branded content, rooted in strategic insights that deliver results. Our clients include Fortune 500, mid-market and disruptor brands across multiple verticals.<\/p>\n"}};
+    </script>
 </head>
 <body>
     <div class="home-page-header-wrapper">
@@ -114,19 +117,19 @@
                 <img class="our-customers-partner-logo" src="img/360deg-logo.svg" alt="partner-logo">
                 <h4 class="our-customers-partner-header">Marko</h4>
                 <p class="our-customers-partner-description">Lead Manager</p>
-                <button class="main-button">Read details</button>
+                <button class="main-button" data-toggle="modal" data-target="#read-review-details" data-id="104" onclick="onReadDetails(this)">Read details</button>
             </div>
             <div class="our-customers-partner">
                 <img class="our-customers-partner-logo" src="img/Sephora_logo_1.svg" alt="partner-logo">
                 <h4 class="our-customers-partner-header">Adam Kant</h4>
                 <p class="our-customers-partner-description">Business Development Manager Venture Capital Firm</p>
-                <button class="main-button">Read details</button>
+                <button class="main-button" data-toggle="modal" data-target="#read-review-details" data-id="103" onclick="onReadDetails(this)">Read details</button>
             </div>
             <div class="our-customers-partner">
                 <img class="our-customers-partner-logo" src="img/blend-logo.svg" alt="partner-logo">
                 <h4 class="our-customers-partner-header">Nick Samon</h4>
                 <p class="our-customers-partner-description">CFO</p>
-                <button class="main-button">Read details</button>
+                <button class="main-button" data-toggle="modal" data-target="#read-review-details" data-id="101" onclick="onReadDetails(this)">Read details</button>
             </div>
         </div>
     </section>
@@ -518,5 +521,20 @@
         </div>
     </div>
     <!-- End Modal looking-for-talent -->
+
+    <!-- Start Modal read-review-details -->
+    <div class="modal fade show" id="read-review-details" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="close-modal-icon" src="img/Close.svg" alt="close" data-dismiss="modal">
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal read-review-details -->
 </body>
 </html>

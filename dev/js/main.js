@@ -39,5 +39,10 @@ jQuery(document).ready(() => {
     }, false );
 })
 
-
+function onReadDetails(button) {
+    const currentReview = reviews_data[button.dataset.id];
+    const title= `<h5 class="modal-title">${currentReview.title}</h5>`;
+    const description = `<div class="detail-pop-up-description">${currentReview.description}</div>`;
+    jQuery('#read-review-details .modal-body').empty().append(title).append(description);
+}
 
