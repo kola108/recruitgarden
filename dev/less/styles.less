@@ -2674,7 +2674,6 @@ footer {
 }
 
 .agency-content {
-  padding-bottom: 110px;
 
   .agency-content-header {
     padding-bottom: 5px;
@@ -2687,20 +2686,6 @@ footer {
   .agency-content-title span {
     line-height: 50px;
     vertical-align: middle;
-  }
-
-  .agency-content-author {
-    padding-top: 25px;
-    padding-left: 75px;
-    display: flex;
-    color: #074D31;
-    font-weight: 600;
-
-    span {
-      padding-left: 10px;
-      font-weight: 400;
-    }
-    
   }
 
   .agency-content-title {
@@ -2717,6 +2702,19 @@ footer {
       padding-left: 20px;
     }
   }
+
+  .agency-content p {
+    padding-top: 25px;
+    padding-left: 75px;
+    display: flex;
+    color: #074D31;
+    font-weight: 600;
+
+    span {
+      padding-left: 10px;
+      font-weight: 400;
+    }
+  }
 }
 
 .agency-content-text {
@@ -2725,6 +2723,7 @@ footer {
   padding-top: 40px;
   font-size: 18px;
   line-height: 1.45;
+  padding-bottom: 110px;
 
   :not(:last-child) {
     padding-bottom: 20px;
@@ -2735,18 +2734,26 @@ footer {
   padding-left: 75px;
   padding-bottom: 120px;
 
-  .page-item:first-child .page-link {
+  .page-item:first-child .page-numbers {
     padding-left: 0;
-  }  
-}
-
-.pagination-lg {
-  .page-link {
-    font-size: 24px;
   }
 }
 
-.page-link {
+.pagination-lg {
+
+  .page-numbers {
+    font-size: 24px;
+    padding: .75rem 1.5rem;
+    padding: .75rem 1.5rem;
+  }
+
+  .dots {
+    font-size: 24px;
+  }
+
+}
+
+.page-numbers {
   color: #000;
   font-family: 'apercu_pro';
   font-size: 24px;
@@ -2755,18 +2762,18 @@ footer {
   border: none;
 }
 
-.page-link:hover {
+.page-numbers:hover {
   color: #000;
   text-decoration: underline;
   background-color: #fff;
   border-color: none;
 }
 
-.page-item.disabled .page-link {
+.page-item.disabled .page-numbers {
   color: #000;
 }
 
-.page-link:focus {
+.page-numbers:focus {
   z-index: 3;
   outline: 0;
   box-shadow: none;
@@ -2903,7 +2910,7 @@ select.custom-select {
     }
   }
 
-  .agency-content-author {
+  .agency-content p {
     padding-top: 25px;
   }
 
@@ -2961,7 +2968,7 @@ select.custom-select {
       padding-top: 15px;
     }
 
-    .agency-content-author {
+    .agency-content p {
       padding-top: 25px;
     }
   }
@@ -3094,7 +3101,7 @@ select.custom-select {
   }
 }
 
-.agency-content .agency-content-author {
+.agency-content .agency-content p {
   font-size: 16px;
   color: #074D31;
   font-weight: 600;
@@ -3238,7 +3245,7 @@ select.custom-select {
     padding-left: 50px;
   }
 
-  .pagination-lg .page-link {
+  .pagination-lg .page-numbers {
     padding: 0.75rem 1.0rem;
   }
 
@@ -3247,13 +3254,12 @@ select.custom-select {
   }
   
   .agency-content {
-    padding-bottom: 110px;
 
     .agency-content-title {
       font-size: 30px;
     }
 
-    .agency-content-author {
+    .agency-content p {
       padding-top: 25px;
       padding-left: 50px;
       font-weight: 600;
