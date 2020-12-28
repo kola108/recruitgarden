@@ -1,8 +1,8 @@
 jQuery(document).ready(() => {
-    const burgerMenuWrapper     = jQuery('.burger-menu-wrapper');
-    const burgerMenu            = jQuery('.burger-menu');
-    const burgerMenuBtn         = jQuery('.burger-menu-btn');
-    const burgerMenuBtnWrapper  = jQuery('.burger-menu-btn-wrapper');
+    const burgerMenuWrapper = jQuery('.burger-menu-wrapper');
+    const burgerMenu = jQuery('.burger-menu');
+    const burgerMenuBtn = jQuery('.burger-menu-btn');
+    const burgerMenuBtnWrapper = jQuery('.burger-menu-btn-wrapper');
 
     jQuery('.blog-carousel').slick({
         dots: false,
@@ -33,16 +33,20 @@ jQuery(document).ready(() => {
         }
     })
 
-    document.addEventListener( 'wpcf7mailsent', function( event ) {
+    document.addEventListener('wpcf7mailsent', function (event) {
         if (jQuery('.modal')) jQuery('.modal').modal('hide')
         jQuery('form').trigger("reset")
-    }, false );
-})
+    }, false);
 
-function onReadDetails(button) {
-    const currentReview = reviews_data[button.dataset.id];
-    const title= `<h5 class="modal-title">${currentReview.title}</h5>`;
-    const description = `<div class="detail-pop-up-description">${currentReview.description}</div>`;
-    jQuery('#read-review-details .modal-body').empty().append(title).append(description);
-}
+    jQuery.each(jQuery('.our-customers-partners .our-customers-partner .main-button'), function () {
+        jQuery(this).click(function () {
+            if (reviews_data && Object.keys(reviews_data).length) {
+                const currentReview = reviews_data[this.dataset.id];
+                const title = `<h5 class="modal-title">${currentReview.title}</h5>`;
+                const description = `<div class="detail-pop-up-description">${currentReview.description}</div>`;
+                jQuery('#read-review-details .modal-body').empty().append(title).append(description);
+            }
+        })
+    })
+})
 
